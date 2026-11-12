@@ -1,0 +1,14 @@
+gl_account,account_name,account_class,account_group
+10100,Cash - Operating Account,Asset,Cash
+13100,Input Tax Receivable,Asset,Tax
+20100,Accounts Payable - Trade,Liability,AP Control
+20150,Accrued Liabilities,Liability,Accrual
+60100,Cost of Services Delivered,Expense,Direct Cost
+61000,IT & Software,Expense,Operating Expense
+62000,Professional Fees,Expense,Operating Expense
+63000,Facilities & Utilities,Expense,Operating Expense
+64000,Marketing & Advertising,Expense,Operating Expense
+65000,Travel & Entertainment,Expense,Operating Expense
+66000,Logistics & Freight,Expense,Operating Expense
+70000,Foreign Exchange Gain / Loss,Expense,Other
+99999,Suspense / Clearing,Asset,Clearing

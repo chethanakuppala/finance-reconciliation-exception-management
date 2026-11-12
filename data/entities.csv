@@ -1,0 +1,4 @@
+entity,entity_name,ledger_currency
+US01,Northwind Services US,USD
+CA01,Northwind Services Canada,USD
+UK01,Northwind Services UK,USD

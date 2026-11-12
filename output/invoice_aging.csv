@@ -1,0 +1,267 @@
+invoice_id,vendor_id,vendor_name,entity,invoice_status,currency,due_date,days_past_due,aging_bucket,open_balance_usd
+INV-100591,V1016,Larkfield Utilities Co,CA01,Open,CAD,2026-08-03,58,31-60,248021.05
+INV-100064,V1054,Brightpath Supply Chain Ltd,UK01,Open,EUR,2026-10-08,-8,Current,247180.95
+INV-100714,V1056,Belmont Systems Inc,UK01,Open,USD,2026-10-07,-7,Current,206332.02
+INV-101527,V1000,Drayton Systems Inc,UK01,Disputed,USD,2026-11-09,-40,Current,176283.73
+INV-101239,V1012,Waterford Freight Lines,US01,Disputed,GBP,2026-10-08,-8,Current,155435.06
+INV-100678,V1023,Orion Utilities Co,US01,Open,USD,2026-09-07,23,1-30,149454.92
+INV-100107,V1036,Palisade Partners LLP,CA01,Open,USD,2026-10-26,-26,Current,140929.6
+INV-101294,V1023,Orion Utilities Co,UK01,Partially Paid,USD,2026-10-21,-21,Current,102273.1
+INV-101464,V1051,Apex Utilities Co,CA01,Open,EUR,2026-10-22,-22,Current,98396.55
+INV-100089,V1002,Coppervale Facilities Services,UK01,Open,USD,2026-09-22,8,1-30,97959.84
+INV-101290,V1035,Clearwater Software Ltd,UK01,Open,USD,2026-09-17,13,1-30,92739.0
+INV-101318,V1003,Lochmere Media Group,CA01,Open,USD,2026-11-09,-40,Current,91346.59
+INV-101600,V1005,Pinnacle Supply Chain Ltd,US01,Partially Paid,USD,2026-02-10,232,180+,90215.99
+INV-101425,V1010,Meridian Brand Studio,CA01,Disputed,USD,2026-09-25,5,1-30,81175.42
+INV-101537,V1044,Underhill Utilities Co,US01,Disputed,USD,2026-11-09,-40,Current,78422.24
+INV-101328,V1000,Drayton Systems Inc,CA01,Open,USD,2026-10-05,-5,Current,77889.97
+INV-100440,V1032,Cedarline Corporate Travel,UK01,Open,USD,2026-10-16,-16,Current,77632.46
+INV-100656,V1045,Zephyr Brand Studio,US01,Disputed,USD,2026-09-16,14,1-30,74737.48
+INV-101489,V1007,Dunmore Systems Inc,UK01,Disputed,EUR,2026-07-22,70,61-90,73677.05
+INV-101270,V1039,Ironwood Mobility Services,UK01,Partially Paid,USD,2026-10-26,-26,Current,73181.91
+INV-101645,V1002,Coppervale Facilities Services,US01,Disputed,USD,2026-09-01,29,1-30,72545.19
+INV-101060,V1013,Sandalwood Contracting LLC,CA01,Partially Paid,USD,2026-10-05,-5,Current,72240.99
+INV-101168,V1006,Zenith Field Services,US01,Open,USD,2026-09-09,21,1-30,68468.76
+INV-90012,V1029,Harborview Advisory LLP,US01,Open,USD,2026-07-31,61,61-90,65222.89
+INV-100811,V1009,Ashgrove Utilities Co,UK01,Partially Paid,USD,2026-03-12,202,180+,60409.35
+INV-100399,V1032,Cedarline Corporate Travel,UK01,Disputed,USD,2026-06-25,97,91-180,59749.97
+INV-101518,V1021,Norwood Systems Inc,CA01,Open,EUR,2026-09-16,14,1-30,55601.13
+INV-101556,V1036,Palisade Partners LLP,UK01,Open,USD,2026-10-29,-29,Current,55023.16
+INV-100616,V1012,Waterford Freight Lines,CA01,Open,GBP,2026-10-01,-1,Current,54180.39
+INV-100100,V1048,Monterey Field Services,US01,Disputed,GBP,2026-09-17,13,1-30,53838.33
+INV-101459,V1043,Overton Partners LLP,CA01,Disputed,USD,2026-07-02,90,61-90,53282.82
+INV-100281,V1025,Blue Ridge Corporate Travel,UK01,Open,USD,2026-08-27,34,31-60,49416.23
+INV-100412,V1031,Eastvale Media Group,UK01,Open,GBP,2026-10-16,-16,Current,49020.14
+INV-100162,V1041,Northgate Field Services,UK01,Open,USD,2026-03-26,188,180+,47294.87
+INV-101124,V1010,Meridian Brand Studio,US01,Open,USD,2026-10-12,-12,Current,46091.58
+INV-100552,V1039,Ironwood Mobility Services,CA01,Open,USD,2026-10-30,-30,Current,45599.58
+INV-101598,V1012,Waterford Freight Lines,UK01,Open,GBP,2026-03-30,184,180+,43555.72
+INV-100887,V1052,Kingsley Creative Agency,US01,Open,CAD,2026-08-04,57,31-60,40655.57
+INV-101579,V1020,Westbrook Field Services,UK01,Open,USD,2026-10-05,-5,Current,40517.64
+INV-100966,V1024,Saltgrass Brand Studio,UK01,Open,EUR,2026-10-12,-12,Current,39365.25
+INV-101142,V1052,Kingsley Creative Agency,US01,Open,CAD,2026-10-14,-14,Current,35388.13
+INV-101714,V1056,Belmont Systems Inc,CA01,Disputed,USD,2026-08-19,42,31-60,33857.21
+INV-100720,V1042,Umbra Software Ltd,UK01,Partially Paid,USD,2026-10-14,-14,Current,32865.62
+INV-101116,V1011,Hollis Corporate Travel,US01,Open,SGD,2026-09-16,14,1-30,32585.77
+INV-101221,V1047,Vantage Logistics Inc,CA01,Disputed,USD,2026-10-14,-14,Current,31767.44
+INV-100379,V1049,Fairmount Software Ltd,UK01,Open,USD,2026-09-11,19,1-30,28140.1
+INV-101407,V1007,Dunmore Systems Inc,US01,Open,EUR,2026-10-08,-8,Current,27581.03
+INV-100418,V1022,Rosemont Consulting Group,CA01,Disputed,GBP,2026-10-13,-13,Current,27368.61
+INV-101163,V1033,Riverbend Logistics Inc,CA01,Open,GBP,2026-10-07,-7,Current,27092.01
+INV-101452,V1012,Waterford Freight Lines,US01,Disputed,GBP,2026-10-09,-9,Current,26578.2
+INV-100393,V1020,Westbrook Field Services,CA01,Open,USD,2026-10-05,-5,Current,25736.91
+INV-100592,V1042,Umbra Software Ltd,CA01,Open,USD,2026-08-05,56,31-60,25591.4
+INV-100365,V1019,Kestrel Supply Chain Ltd,CA01,Open,USD,2026-10-27,-27,Current,25564.66
+INV-100441,V1031,Eastvale Media Group,UK01,Open,GBP,2026-06-10,112,91-180,25514.0
+INV-100153,V1046,Granite Bay Corporate Travel,US01,Disputed,USD,2026-03-05,209,180+,24739.83
+INV-100189,V1053,Vermillion Travel Management,UK01,Open,USD,2026-07-23,69,61-90,24571.82
+INV-100006,V1033,Riverbend Logistics Inc,CA01,Disputed,GBP,2026-10-23,-23,Current,24562.25
+INV-101164,V1019,Kestrel Supply Chain Ltd,UK01,Open,USD,2026-11-02,-33,Current,23420.94
+INV-100282,V1025,Blue Ridge Corporate Travel,US01,Open,USD,2026-06-11,111,91-180,22981.5
+INV-100201,V1001,Quarry Hill Advisory LLP,UK01,Open,USD,2026-10-21,-21,Current,22048.88
+INV-100821,V1031,Eastvale Media Group,CA01,Open,GBP,2026-10-12,-12,Current,21677.65
+INV-100229,V1023,Orion Utilities Co,CA01,Open,USD,2026-09-07,23,1-30,21325.88
+INV-101052,V1003,Lochmere Media Group,CA01,Partially Paid,USD,2026-10-08,-8,Current,21200.33
+INV-100390,V1013,Sandalwood Contracting LLC,CA01,Disputed,USD,2026-10-26,-26,Current,20679.61
+INV-100483,V1024,Saltgrass Brand Studio,UK01,Disputed,EUR,2026-08-26,35,31-60,20504.12
+INV-100796,V1039,Ironwood Mobility Services,US01,Open,USD,2026-09-21,9,1-30,20440.7
+INV-101000,V1002,Coppervale Facilities Services,UK01,Disputed,USD,2026-09-28,2,1-30,20258.28
+INV-100671,V1029,Harborview Advisory LLP,US01,Open,USD,2026-10-05,-5,Current,20222.85
+INV-101624,V1007,Dunmore Systems Inc,US01,Open,EUR,2026-04-24,159,91-180,20076.61
+INV-101297,V1015,Tidewater Partners LLP,US01,Open,GBP,2026-07-15,77,61-90,19751.07
+INV-101287,V1021,Norwood Systems Inc,UK01,Open,EUR,2026-10-07,-7,Current,19715.81
+INV-100496,V1011,Hollis Corporate Travel,US01,Open,SGD,2026-10-01,-1,Current,18894.36
+INV-101172,V1046,Granite Bay Corporate Travel,US01,Open,USD,2026-09-09,21,1-30,17023.36
+INV-101245,V1051,Apex Utilities Co,UK01,Open,EUR,2026-11-12,-43,Current,16534.64
+INV-101618,V1028,Elmwood Digital Inc,US01,Open,USD,2026-10-13,-13,Current,16346.38
+INV-100618,V1009,Ashgrove Utilities Co,US01,Open,USD,2026-08-14,47,31-60,16338.12
+INV-100663,V1045,Zephyr Brand Studio,CA01,Open,USD,2026-06-03,119,91-180,16327.04
+INV-100099,V1019,Kestrel Supply Chain Ltd,UK01,Open,USD,2026-08-14,47,31-60,16231.25
+INV-100366,V1052,Kingsley Creative Agency,US01,Open,CAD,2026-09-15,15,1-30,16015.03
+INV-100789,V1003,Lochmere Media Group,UK01,Open,USD,2026-03-16,198,180+,15928.09
+INV-100613,V1015,Tidewater Partners LLP,CA01,Disputed,GBP,2026-10-21,-21,Current,15848.79
+INV-100299,V1048,Monterey Field Services,UK01,Open,GBP,2026-06-29,93,91-180,15626.78
+INV-101242,V1020,Westbrook Field Services,UK01,Open,USD,2026-09-28,2,1-30,14949.49
+INV-100785,V1010,Meridian Brand Studio,UK01,Open,USD,2026-04-01,182,180+,14882.66
+INV-100184,V1039,Ironwood Mobility Services,CA01,Disputed,USD,2026-06-29,93,91-180,14835.74
+INV-100756,V1032,Cedarline Corporate Travel,US01,Disputed,USD,2026-08-06,55,31-60,14687.01
+INV-100598,V1047,Vantage Logistics Inc,US01,Open,USD,2026-10-22,-22,Current,14442.26
+INV-101042,V1045,Zephyr Brand Studio,UK01,Disputed,USD,2026-10-29,-29,Current,13858.92
+INV-101767,V1002,Coppervale Facilities Services,US01,Open,USD,2026-09-18,12,1-30,13820.17
+INV-100602,V1050,Vireo Partners LLP,US01,Disputed,USD,2026-06-12,110,91-180,13288.81
+INV-100257,V1050,Vireo Partners LLP,UK01,Disputed,USD,2026-09-08,22,1-30,12815.88
+INV-101247,V1009,Ashgrove Utilities Co,UK01,Open,USD,2026-08-17,44,31-60,12674.04
+INV-100782,V1012,Waterford Freight Lines,US01,Open,GBP,2026-10-16,-16,Current,12141.69
+INV-101656,V1016,Larkfield Utilities Co,UK01,Open,CAD,2026-10-21,-21,Current,11606.94
+INV-90015,V1053,Vermillion Travel Management,US01,Open,USD,2026-05-04,149,91-180,10241.45
+INV-100654,V1041,Northgate Field Services,CA01,Disputed,USD,2026-11-06,-37,Current,10206.6
+INV-100983,V1050,Vireo Partners LLP,US01,Open,USD,2026-10-26,-26,Current,10198.27
+INV-100358,V1045,Zephyr Brand Studio,CA01,Disputed,USD,2026-08-12,49,31-60,10094.83
+INV-101463,V1028,Elmwood Digital Inc,CA01,Open,USD,2026-06-10,112,91-180,10088.23
+INV-101033,V1039,Ironwood Mobility Services,UK01,Disputed,USD,2026-08-24,37,31-60,10019.46
+INV-100679,V1030,Foxglove Property Group,US01,Open,USD,2026-11-24,-55,Current,9742.51
+INV-100333,V1002,Coppervale Facilities Services,UK01,Disputed,USD,2026-09-29,1,1-30,9665.41
+INV-101327,V1043,Overton Partners LLP,UK01,Disputed,USD,2026-10-16,-16,Current,9476.06
+INV-101584,V1009,Ashgrove Utilities Co,UK01,Open,USD,2026-09-29,1,1-30,9452.31
+INV-101151,V1049,Fairmount Software Ltd,UK01,Open,USD,2026-10-05,-5,Current,8878.5
+INV-100586,V1056,Belmont Systems Inc,UK01,Partially Paid,USD,2026-08-07,54,31-60,7663.3
+INV-100729,V1015,Tidewater Partners LLP,CA01,Open,GBP,2026-10-21,-21,Current,7485.51
+INV-100590,V1015,Tidewater Partners LLP,UK01,Disputed,GBP,2026-05-18,135,91-180,7174.69
+INV-100252,V1003,Lochmere Media Group,UK01,Partially Paid,USD,2026-10-05,-5,Current,6934.32
+INV-100823,V1015,Tidewater Partners LLP,UK01,Open,GBP,2026-10-12,-12,Current,5898.58
+INV-100400,V1031,Eastvale Media Group,CA01,Open,GBP,2026-09-14,16,1-30,5841.3
+INV-100902,V1015,Tidewater Partners LLP,CA01,Open,GBP,2026-10-07,-7,Current,5592.9
+INV-101147,V1040,Redstone Supply Chain Ltd,US01,Disputed,GBP,2026-08-26,35,31-60,5582.4
+INV-100973,V1050,Vireo Partners LLP,US01,Open,USD,2026-10-05,-5,Current,5427.1
+INV-101200,V1024,Saltgrass Brand Studio,CA01,Disputed,EUR,2026-08-06,55,31-60,5399.57
+INV-100129,V1000,Drayton Systems Inc,CA01,Partially Paid,USD,2026-10-08,-8,Current,5373.66
+INV-101110,V1004,Yarrow Corporate Travel,UK01,Open,USD,2026-10-13,-13,Current,5219.48
+INV-100883,V1003,Lochmere Media Group,US01,Disputed,USD,2026-10-08,-8,Current,4999.39
+INV-100509,V1039,Ironwood Mobility Services,US01,Disputed,USD,2026-10-09,-9,Current,4976.46
+INV-100964,V1022,Rosemont Consulting Group,CA01,Open,GBP,2026-09-08,22,1-30,4957.3
+INV-101034,V1021,Norwood Systems Inc,CA01,Open,EUR,2026-10-14,-14,Current,4861.32
+INV-101046,V1013,Sandalwood Contracting LLC,UK01,Open,USD,2026-11-06,-37,Current,4827.84
+INV-100341,V1020,Westbrook Field Services,UK01,Disputed,USD,2026-10-19,-19,Current,4809.81
+INV-100411,V1037,Maplecrest Utilities Co,UK01,Open,USD,2026-10-14,-14,Current,4795.45
+INV-100376,V1030,Foxglove Property Group,US01,Open,USD,2026-10-30,-30,Current,4734.21
+INV-101733,V1041,Northgate Field Services,UK01,Open,USD,2026-10-30,-30,Current,4704.44
+INV-101508,V1046,Granite Bay Corporate Travel,US01,Open,USD,2026-10-05,-5,Current,4605.6
+INV-101409,V1020,Westbrook Field Services,CA01,Open,USD,2026-10-12,-12,Current,4561.11
+INV-101083,V1018,Stonebridge Travel Management,US01,Disputed,USD,2026-10-06,-6,Current,4422.18
+INV-100067,V1051,Apex Utilities Co,UK01,Disputed,EUR,2026-11-12,-43,Current,4329.01
+INV-101610,V1039,Ironwood Mobility Services,CA01,Open,USD,2026-10-05,-5,Current,4221.87
+INV-100354,V1015,Tidewater Partners LLP,US01,Open,GBP,2026-09-16,14,1-30,4134.93
+INV-100220,V1050,Vireo Partners LLP,UK01,Open,USD,2026-10-16,-16,Current,4080.11
+INV-90006,V1003,Lochmere Media Group,UK01,Open,USD,2026-08-06,55,31-60,4062.7
+INV-101617,V1006,Zenith Field Services,CA01,Disputed,USD,2026-10-12,-12,Current,4039.47
+INV-101002,V1051,Apex Utilities Co,UK01,Disputed,EUR,2026-09-21,9,1-30,4038.05
+INV-100732,V1002,Coppervale Facilities Services,UK01,Disputed,USD,2026-09-10,20,1-30,4024.43
+INV-100317,V1023,Orion Utilities Co,UK01,Open,USD,2026-07-16,76,61-90,3962.62
+INV-101176,V1022,Rosemont Consulting Group,UK01,Disputed,GBP,2026-08-17,44,31-60,3950.28
+INV-101367,V1031,Eastvale Media Group,UK01,Open,GBP,2026-10-21,-21,Current,3934.28
+INV-101390,V1053,Vermillion Travel Management,CA01,Open,USD,2026-10-15,-15,Current,3871.37
+INV-101106,V1041,Northgate Field Services,US01,Open,USD,2026-08-06,55,31-60,3834.3
+INV-101288,V1037,Maplecrest Utilities Co,CA01,Disputed,USD,2026-10-14,-14,Current,3752.66
+INV-101304,V1013,Sandalwood Contracting LLC,US01,Open,USD,2026-11-20,-51,Current,3692.79
+INV-90000,V1017,Yardley Media Group,US01,Open,GBP,2026-11-19,-50,Current,3677.14
+INV-100325,V1023,Orion Utilities Co,CA01,Open,USD,2026-10-05,-5,Current,3526.05
+INV-100017,V1014,Oakhurst Digital Inc,CA01,Disputed,USD,2026-10-06,-6,Current,3460.29
+INV-100468,V1035,Clearwater Software Ltd,CA01,Open,USD,2026-08-06,55,31-60,3417.94
+INV-101086,V1013,Sandalwood Contracting LLC,CA01,Open,USD,2026-10-09,-9,Current,3394.85
+INV-101482,V1033,Riverbend Logistics Inc,US01,Open,GBP,2026-10-14,-14,Current,3333.62
+INV-100435,V1053,Vermillion Travel Management,CA01,Open,USD,2026-08-03,58,31-60,3260.34
+INV-90003,V1007,Dunmore Systems Inc,US01,Open,EUR,2026-10-09,-9,Current,3256.49
+INV-100442,V1055,Whitlock Field Services,CA01,Open,USD,2026-10-02,-2,Current,3243.53
+INV-100935,V1056,Belmont Systems Inc,US01,Open,USD,2026-10-07,-7,Current,3231.75
+INV-101253,V1036,Palisade Partners LLP,CA01,Partially Paid,USD,2026-10-08,-8,Current,3204.62
+INV-101704,V1033,Riverbend Logistics Inc,US01,Disputed,GBP,2026-10-28,-28,Current,3169.35
+INV-101389,V1014,Oakhurst Digital Inc,CA01,Partially Paid,USD,2026-07-16,76,61-90,3163.53
+INV-101505,V1013,Sandalwood Contracting LLC,CA01,Disputed,USD,2026-09-14,16,1-30,3158.77
+INV-100891,V1048,Monterey Field Services,CA01,Open,GBP,2026-09-22,8,1-30,3138.02
+INV-100054,V1029,Harborview Advisory LLP,CA01,Open,USD,2026-06-15,107,91-180,3137.6
+INV-101524,V1000,Drayton Systems Inc,CA01,Open,USD,2026-10-26,-26,Current,3113.87
+INV-101591,V1042,Umbra Software Ltd,CA01,Disputed,USD,2026-10-07,-7,Current,3084.95
+INV-100581,V1015,Tidewater Partners LLP,CA01,Open,GBP,2026-09-14,16,1-30,3008.12
+INV-101322,V1036,Palisade Partners LLP,UK01,Disputed,USD,2026-10-05,-5,Current,2998.68
+INV-101439,V1023,Orion Utilities Co,US01,Open,USD,2026-08-31,30,1-30,2983.92
+INV-100449,V1035,Clearwater Software Ltd,UK01,Open,USD,2026-11-09,-40,Current,2963.53
+INV-100648,V1003,Lochmere Media Group,UK01,Disputed,USD,2026-10-01,-1,Current,2921.28
+INV-100138,V1003,Lochmere Media Group,UK01,Open,USD,2026-10-19,-19,Current,2876.86
+INV-101267,V1032,Cedarline Corporate Travel,US01,Open,USD,2026-10-08,-8,Current,2874.7
+INV-101671,V1053,Vermillion Travel Management,UK01,Open,USD,2026-11-05,-36,Current,2784.99
+INV-100651,V1055,Whitlock Field Services,CA01,Open,USD,2026-08-17,44,31-60,2772.03
+INV-101345,V1040,Redstone Supply Chain Ltd,US01,Open,GBP,2026-10-28,-28,Current,2768.62
+INV-100060,V1001,Quarry Hill Advisory LLP,CA01,Disputed,USD,2026-10-05,-5,Current,2758.04
+INV-100193,V1009,Ashgrove Utilities Co,UK01,Disputed,USD,2026-07-03,89,61-90,2702.28
+INV-100230,V1032,Cedarline Corporate Travel,CA01,Open,USD,2026-03-02,212,180+,2611.71
+INV-100681,V1053,Vermillion Travel Management,US01,Open,USD,2026-10-19,-19,Current,2567.4
+INV-101132,V1045,Zephyr Brand Studio,UK01,Disputed,USD,2026-09-21,9,1-30,2549.13
+INV-100088,V1051,Apex Utilities Co,UK01,Open,EUR,2026-10-08,-8,Current,2543.0
+INV-101131,V1041,Northgate Field Services,CA01,Open,USD,2026-10-26,-26,Current,2448.82
+INV-101762,V1052,Kingsley Creative Agency,US01,Disputed,CAD,2026-09-23,7,1-30,2415.15
+INV-101789,V1022,Rosemont Consulting Group,UK01,Open,GBP,2026-10-09,-9,Current,2382.04
+INV-101125,V1049,Fairmount Software Ltd,CA01,Partially Paid,USD,2026-10-21,-21,Current,2377.74
+INV-101137,V1009,Ashgrove Utilities Co,CA01,Open,USD,2026-10-01,-1,Current,2367.87
+INV-100323,V1056,Belmont Systems Inc,CA01,Open,USD,2026-03-25,189,180+,2302.85
+INV-101412,V1022,Rosemont Consulting Group,UK01,Disputed,GBP,2026-10-13,-13,Current,2288.92
+INV-100688,V1036,Palisade Partners LLP,US01,Partially Paid,USD,2026-11-12,-43,Current,2180.59
+INV-101248,V1039,Ironwood Mobility Services,US01,Disputed,USD,2026-09-28,2,1-30,2171.48
+INV-101765,V1025,Blue Ridge Corporate Travel,UK01,Disputed,USD,2026-02-20,222,180+,2101.12
+INV-100912,V1014,Oakhurst Digital Inc,UK01,Open,USD,2026-08-11,50,31-60,2075.43
+INV-100927,V1007,Dunmore Systems Inc,UK01,Open,EUR,2026-08-26,35,31-60,2061.98
+INV-101026,V1040,Redstone Supply Chain Ltd,US01,Disputed,GBP,2026-10-12,-12,Current,2042.35
+INV-101669,V1037,Maplecrest Utilities Co,CA01,Open,USD,2026-10-08,-8,Current,2035.99
+INV-101210,V1049,Fairmount Software Ltd,UK01,Open,USD,2026-10-05,-5,Current,2000.76
+INV-100905,V1030,Foxglove Property Group,CA01,Disputed,USD,2026-11-09,-40,Current,1997.76
+INV-100877,V1055,Whitlock Field Services,CA01,Open,USD,2026-10-28,-28,Current,1995.4
+INV-100268,V1046,Granite Bay Corporate Travel,UK01,Open,USD,2026-07-22,70,61-90,1937.74
+INV-100439,V1002,Coppervale Facilities Services,CA01,Open,USD,2026-09-02,28,1-30,1926.76
+INV-100124,V1012,Waterford Freight Lines,UK01,Disputed,GBP,2026-10-12,-12,Current,1891.12
+INV-100443,V1049,Fairmount Software Ltd,UK01,Open,USD,2026-10-02,-2,Current,1865.29
+INV-100387,V1048,Monterey Field Services,US01,Open,GBP,2026-09-01,29,1-30,1864.41
+INV-100676,V1052,Kingsley Creative Agency,UK01,Open,CAD,2026-07-15,77,61-90,1861.78
+INV-101560,V1032,Cedarline Corporate Travel,US01,Disputed,USD,2026-09-30,0,Current,1814.42
+INV-100547,V1050,Vireo Partners LLP,UK01,Open,USD,2026-10-16,-16,Current,1804.65
+INV-100840,V1028,Elmwood Digital Inc,CA01,Open,USD,2026-09-21,9,1-30,1780.28
+INV-100545,V1004,Yarrow Corporate Travel,CA01,Partially Paid,USD,2026-10-09,-9,Current,1663.81
+INV-101299,V1010,Meridian Brand Studio,US01,Open,USD,2026-07-29,63,61-90,1651.15
+INV-100016,V1053,Vermillion Travel Management,US01,Open,USD,2026-07-20,72,61-90,1650.12
+INV-101047,V1001,Quarry Hill Advisory LLP,CA01,Partially Paid,USD,2026-06-24,98,91-180,1610.43
+INV-100940,V1012,Waterford Freight Lines,UK01,Disputed,GBP,2026-09-10,20,1-30,1601.19
+INV-101730,V1020,Westbrook Field Services,UK01,Partially Paid,USD,2026-09-17,13,1-30,1458.05
+INV-101700,V1054,Brightpath Supply Chain Ltd,US01,Open,EUR,2026-10-26,-26,Current,1455.94
+INV-100807,V1037,Maplecrest Utilities Co,CA01,Open,USD,2026-08-31,30,1-30,1427.23
+INV-101209,V1016,Larkfield Utilities Co,US01,Disputed,CAD,2026-09-04,26,1-30,1395.6
+INV-101307,V1007,Dunmore Systems Inc,CA01,Open,EUR,2026-09-21,9,1-30,1381.2
+INV-101575,V1056,Belmont Systems Inc,US01,Partially Paid,USD,2026-10-28,-28,Current,1361.09
+INV-101749,V1050,Vireo Partners LLP,CA01,Disputed,USD,2026-11-27,-58,Current,1360.02
+INV-100101,V1050,Vireo Partners LLP,CA01,Partially Paid,USD,2026-10-23,-23,Current,1318.65
+INV-100511,V1054,Brightpath Supply Chain Ltd,CA01,Disputed,EUR,2026-11-09,-40,Current,1318.62
+INV-101672,V1036,Palisade Partners LLP,US01,Disputed,USD,2026-09-24,6,1-30,1308.21
+INV-101171,V1017,Yardley Media Group,CA01,Disputed,GBP,2026-11-05,-36,Current,1273.8
+INV-101118,V1016,Larkfield Utilities Co,US01,Open,CAD,2026-09-23,7,1-30,1256.97
+INV-101687,V1033,Riverbend Logistics Inc,US01,Open,GBP,2026-09-30,0,Current,1246.93
+INV-100717,V1029,Harborview Advisory LLP,CA01,Partially Paid,USD,2026-10-21,-21,Current,1228.66
+INV-100444,V1026,Thornhill Supply Chain Ltd,UK01,Disputed,GBP,2026-08-18,43,31-60,1158.56
+INV-101661,V1005,Pinnacle Supply Chain Ltd,US01,Disputed,USD,2026-10-13,-13,Current,1136.0
+INV-100373,V1007,Dunmore Systems Inc,CA01,Open,EUR,2026-10-12,-12,Current,1123.79
+INV-101438,V1038,Tolliver Brand Studio,US01,Disputed,INR,2026-10-16,-16,Current,1114.57
+INV-100091,V1041,Northgate Field Services,US01,Disputed,USD,2026-10-29,-29,Current,1069.03
+INV-90009,V1052,Kingsley Creative Agency,US01,Open,CAD,2026-09-22,8,1-30,1016.28
+INV-101731,V1040,Redstone Supply Chain Ltd,US01,Open,GBP,2026-09-02,28,1-30,993.08
+INV-100126,V1034,Parkhurst Contracting LLC,UK01,Open,INR,2026-11-13,-44,Current,942.48
+INV-100907,V1034,Parkhurst Contracting LLC,US01,Open,INR,2026-04-23,160,91-180,905.31
+INV-100274,V1054,Brightpath Supply Chain Ltd,UK01,Open,EUR,2026-11-12,-43,Current,902.67
+INV-100728,V1000,Drayton Systems Inc,CA01,Open,USD,2026-10-01,-1,Current,886.16
+INV-101195,V1047,Vantage Logistics Inc,UK01,Disputed,USD,2026-06-03,119,91-180,866.75
+INV-100216,V1001,Quarry Hill Advisory LLP,CA01,Partially Paid,USD,2026-09-16,14,1-30,785.01
+INV-100110,V1030,Foxglove Property Group,US01,Open,USD,2026-11-09,-40,Current,705.48
+INV-100392,V1026,Thornhill Supply Chain Ltd,CA01,Open,GBP,2026-09-14,16,1-30,697.0
+INV-101676,V1025,Blue Ridge Corporate Travel,US01,Open,USD,2026-09-29,1,1-30,694.92
+INV-100225,V1046,Granite Bay Corporate Travel,CA01,Open,USD,2026-10-14,-14,Current,664.99
+INV-100082,V1006,Zenith Field Services,UK01,Disputed,USD,2026-10-28,-28,Current,662.57
+INV-100053,V1045,Zephyr Brand Studio,CA01,Partially Paid,USD,2026-10-07,-7,Current,627.43
+INV-100869,V1050,Vireo Partners LLP,CA01,Disputed,USD,2026-10-13,-13,Current,609.21
+INV-100492,V1029,Harborview Advisory LLP,UK01,Open,USD,2026-10-08,-8,Current,600.81
+INV-100500,V1030,Foxglove Property Group,UK01,Open,USD,2026-10-09,-9,Current,569.13
+INV-100806,V1056,Belmont Systems Inc,UK01,Open,USD,2026-10-23,-23,Current,519.6
+INV-101578,V1040,Redstone Supply Chain Ltd,CA01,Open,GBP,2026-03-02,212,180+,402.33
+INV-100361,V1057,Glenmoor Partners LLP,UK01,Disputed,INR,2026-04-06,177,91-180,399.98
+INV-100879,V1024,Saltgrass Brand Studio,UK01,Open,EUR,2026-10-01,-1,Current,366.1
+INV-101395,V1035,Clearwater Software Ltd,UK01,Open,USD,2026-08-03,58,31-60,346.22
+INV-101085,V1019,Kestrel Supply Chain Ltd,US01,Partially Paid,USD,2026-10-05,-5,Current,317.01
+INV-100824,V1012,Waterford Freight Lines,UK01,Disputed,GBP,2026-09-25,5,1-30,311.56
+INV-100198,V1054,Brightpath Supply Chain Ltd,UK01,Open,EUR,2026-10-09,-9,Current,290.67
+INV-101494,V1057,Glenmoor Partners LLP,UK01,Disputed,INR,2026-04-22,161,91-180,287.2
+INV-101745,V1035,Clearwater Software Ltd,CA01,Partially Paid,USD,2026-09-14,16,1-30,262.84
+INV-101416,V1034,Parkhurst Contracting LLC,UK01,Disputed,INR,2026-10-05,-5,Current,195.68
+INV-100860,V1057,Glenmoor Partners LLP,US01,Disputed,INR,2026-07-15,77,61-90,64.77
+INV-101079,V1034,Parkhurst Contracting LLC,US01,Open,INR,2026-10-22,-22,Current,50.27
+INV-100145,V1038,Tolliver Brand Studio,CA01,Disputed,INR,2026-10-19,-19,Current,49.62
+INV-101057,V1034,Parkhurst Contracting LLC,US01,Disputed,INR,2026-11-02,-33,Current,37.32
+INV-100609,V1034,Parkhurst Contracting LLC,UK01,Open,INR,2026-10-19,-19,Current,35.7
+INV-101122,V1057,Glenmoor Partners LLP,CA01,Disputed,INR,2026-09-30,0,Current,35.13
+INV-101525,V1057,Glenmoor Partners LLP,UK01,Disputed,INR,2026-10-01,-1,Current,21.32
+INV-100515,V1034,Parkhurst Contracting LLC,CA01,Open,INR,2026-06-29,93,91-180,16.28
+INV-100432,V1034,Parkhurst Contracting LLC,US01,Open,INR,2026-10-23,-23,Current,5.85
+INV-101392,V1034,Parkhurst Contracting LLC,UK01,Open,INR,2026-07-02,90,61-90,4.52

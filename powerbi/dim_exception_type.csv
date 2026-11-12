@@ -1,0 +1,15 @@
+exception_type,control_id,root_cause_category
+AGED_OPEN_ITEM,C-13,Unresolved dispute or missing approval blocking settlement
+BANK_ITEM_NOT_IN_GL,C-06,Bank-originated item never journalised
+DUPLICATE_INVOICE,C-01,Manual re-keying / no invoice-number uniqueness check
+DUPLICATE_PAYMENT,C-02,Payment run picked up an already-settled item
+DUPLICATE_VENDOR_MASTER,C-12,Vendor created without duplicate-check on bank/tax ID
+FX_RATE_ERROR,C-09,Manual rate override instead of the published period rate
+GL_CASH_NOT_ON_STATEMENT,C-06,Payment issued but not cleared by the bank
+GL_SUBLEDGER_VARIANCE,C-11,Aggregate effect of upstream posting exceptions
+MISSING_GL_POSTING,C-04,Sub-ledger to GL interface drop
+PAYMENT_AMOUNT_MISMATCH,C-05,Short pay / overpay not matched to a credit memo
+SOD_VIOLATION,C-08,Preparer and approver are the same user
+TOPSIDE_AP_ENTRY,C-10,Close adjustment booked without sub-ledger support
+UNAPPLIED_PAYMENT,C-03,Disbursement released without invoice application
+UNBALANCED_JOURNAL,C-07,Partial or truncated journal upload

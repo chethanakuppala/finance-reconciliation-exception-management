@@ -1,0 +1,26 @@
+{
+  "tables": {
+    "dim_date": 396,
+    "dim_entity": 3,
+    "dim_gl_account": 13,
+    "dim_cost_center": 6,
+    "dim_vendor": 62,
+    "dim_control": 13,
+    "dim_exception_type": 14,
+    "dim_severity": 4,
+    "dim_status": 3,
+    "dim_aging_bucket": 6,
+    "fact_invoice": 1816,
+    "fact_payment": 1600,
+    "fact_gl": 8779,
+    "fact_bank_transaction": 1597,
+    "fact_exception": 160,
+    "fact_exception_analysis": 160,
+    "fact_ap_tieout": 3,
+    "relationships": 27
+  },
+  "relationships": 27,
+  "date_grain": "day",
+  "as_of_date": "2026-09-30",
+  "measure_file": "measures.dax"
+}

@@ -1,0 +1,4 @@
+pandas>=2.0
+openpyxl>=3.1
+# Optional - only needed for `python3 exception_analysis.py --provider claude`
+# anthropic>=0.40

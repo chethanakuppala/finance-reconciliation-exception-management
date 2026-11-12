@@ -1,0 +1,161 @@
+exception_id,control_id,exception_type,severity,entity,exception_amount_usd,analysis_source,confidence,recommended_action,recovery_expected_usd,repeat_risk,control_gap,requires_human_review,validation_status,blocking_checks,advisory_checks,reviewer_disposition
+EXC-00118,C-10,TOPSIDE_AP_ENTRY,Critical,US01,377077.07,rules,0.87,Escalate to controller,0.0,High,AP control account is not restricted to sub-ledger postings.,True,Accepted,,,Pending review
+EXC-00047,C-06,GL_CASH_NOT_ON_STATEMENT,Critical,CA01,320546.38,rules,0.78,Escalate to controller,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,True,Accepted,,,Overridden
+EXC-00145,C-02,DUPLICATE_PAYMENT,Critical,US01,318848.11,rules,0.9,Escalate to controller,318848.11,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Pending review
+EXC-00018,C-10,TOPSIDE_AP_ENTRY,Critical,UK01,311352.35,rules,0.87,Escalate to controller,0.0,High,AP control account is not restricted to sub-ledger postings.,True,Accepted,,,Overridden
+EXC-00065,C-10,TOPSIDE_AP_ENTRY,Critical,US01,298648.17,rules,0.87,Escalate to controller,0.0,High,AP control account is not restricted to sub-ledger postings.,True,Accepted,,,Pending review
+EXC-00160,C-11,GL_SUBLEDGER_VARIANCE,Critical,US01,274039.75,rules,0.8,Escalate to controller,0.0,High,No monthly tie-out control with a documented variance decomposition.,True,Accepted,,,Pending review
+EXC-00057,C-10,TOPSIDE_AP_ENTRY,Critical,US01,260800.89,rules,0.87,Escalate to controller,0.0,High,AP control account is not restricted to sub-ledger postings.,True,Accepted,,,Pending review
+EXC-00058,C-08,SOD_VIOLATION,Critical,CA01,239909.6,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Accepted
+EXC-00110,C-08,SOD_VIOLATION,Critical,US01,202083.59,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Accepted
+EXC-00060,C-02,DUPLICATE_PAYMENT,Critical,UK01,198976.72,rules,0.9,Escalate to controller,198976.72,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00133,C-08,SOD_VIOLATION,Critical,CA01,188954.44,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Pending review
+EXC-00127,C-08,SOD_VIOLATION,Critical,CA01,172315.64,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Pending review
+EXC-00117,C-08,SOD_VIOLATION,Critical,UK01,147549.9,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Accepted
+EXC-00078,C-08,SOD_VIOLATION,Critical,US01,138641.5,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Pending review
+EXC-00059,C-10,TOPSIDE_AP_ENTRY,Critical,UK01,120545.18,rules,0.87,Escalate to controller,0.0,High,AP control account is not restricted to sub-ledger postings.,True,Accepted,,,Accepted with edits
+EXC-00097,C-08,SOD_VIOLATION,Critical,UK01,96571.11,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Accepted
+EXC-00120,C-04,MISSING_GL_POSTING,Critical,UK01,92739.0,rules,0.86,Escalate to controller,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,True,Accepted,,,Pending review
+EXC-00014,C-02,DUPLICATE_PAYMENT,Critical,CA01,90563.48,rules,0.9,Escalate to controller,90563.48,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Overridden
+EXC-00006,C-13,AGED_OPEN_ITEM,Critical,US01,90215.99,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,True,Accepted,,,Accepted with edits
+EXC-00156,C-08,SOD_VIOLATION,Critical,US01,88249.18,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Pending review
+EXC-00040,C-08,SOD_VIOLATION,Critical,US01,80618.66,rules,0.95,Escalate to controller,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Accepted
+EXC-00150,C-04,MISSING_GL_POSTING,Critical,US01,78422.24,rules,0.86,Escalate to controller,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,True,Accepted,,,Pending review
+EXC-00070,C-03,UNAPPLIED_PAYMENT,High,CA01,71329.09,rules,0.74,Apply cash to open invoice,24965.18,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted
+EXC-00090,C-01,DUPLICATE_INVOICE,High,US01,68017.96,rules,0.88,Reverse duplicate accrual,68017.96,High,No uniqueness check on normalised vendor invoice number at entry.,True,Accepted,,,Accepted
+EXC-00151,C-08,SOD_VIOLATION,High,UK01,67954.08,rules,0.95,Obtain approval evidence,0.0,High,Workflow does not enforce a second approver on manual journals.,True,Accepted,,,Pending review
+EXC-00103,C-01,DUPLICATE_INVOICE,High,US01,65222.89,rules,0.88,Reverse duplicate accrual,65222.89,High,No uniqueness check on normalised vendor invoice number at entry.,True,Accepted,,,Pending review
+EXC-00115,C-03,UNAPPLIED_PAYMENT,High,US01,62767.84,rules,0.74,Apply cash to open invoice,21968.74,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted
+EXC-00093,C-03,UNAPPLIED_PAYMENT,High,CA01,61449.13,rules,0.74,Apply cash to open invoice,21507.2,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted
+EXC-00025,C-13,AGED_OPEN_ITEM,High,UK01,60409.35,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,True,Accepted,,,Accepted
+EXC-00095,C-13,AGED_OPEN_ITEM,High,UK01,59749.97,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,True,Accepted,,,Accepted
+EXC-00144,C-04,MISSING_GL_POSTING,High,UK01,55023.16,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,True,Accepted,,,Accepted
+EXC-00111,C-03,UNAPPLIED_PAYMENT,High,US01,55022.8,rules,0.74,Apply cash to open invoice,19257.98,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Pending review
+EXC-00113,C-03,UNAPPLIED_PAYMENT,High,CA01,53150.08,rules,0.74,Apply cash to open invoice,18602.53,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Pending review
+EXC-00122,C-03,UNAPPLIED_PAYMENT,High,US01,50219.94,rules,0.74,Apply cash to open invoice,17576.98,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted
+EXC-00004,C-03,UNAPPLIED_PAYMENT,High,CA01,48370.78,rules,0.74,Apply cash to open invoice,16929.77,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted
+EXC-00031,C-13,AGED_OPEN_ITEM,High,UK01,47294.87,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,True,Accepted,,,Accepted
+EXC-00033,C-13,AGED_OPEN_ITEM,High,UK01,43555.72,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,True,Accepted,,,Accepted
+EXC-00084,C-03,UNAPPLIED_PAYMENT,High,UK01,43112.05,rules,0.74,Apply cash to open invoice,15089.22,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted
+EXC-00148,C-06,GL_CASH_NOT_ON_STATEMENT,High,CA01,42573.39,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,True,Accepted,,,Pending review
+EXC-00159,C-11,GL_SUBLEDGER_VARIANCE,Critical,UK01,38470.84,rules,0.8,Escalate to controller,0.0,High,No monthly tie-out control with a documented variance decomposition.,True,Accepted,,,Accepted
+EXC-00135,C-03,UNAPPLIED_PAYMENT,High,CA01,38311.77,rules,0.74,Apply cash to open invoice,13409.12,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Pending review
+EXC-00044,C-03,UNAPPLIED_PAYMENT,High,UK01,35610.32,rules,0.74,Apply cash to open invoice,12463.61,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted with edits
+EXC-00021,C-03,UNAPPLIED_PAYMENT,High,UK01,32676.12,rules,0.74,Apply cash to open invoice,11436.64,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted
+EXC-00009,C-01,DUPLICATE_INVOICE,High,CA01,31872.65,rules,0.88,Reverse duplicate accrual,31872.65,High,No uniqueness check on normalised vendor invoice number at entry.,True,Accepted,,,Accepted with edits
+EXC-00077,C-06,BANK_ITEM_NOT_IN_GL,High,UK01,28232.65,rules,0.82,Post correcting journal,0.0,Low,Bank-originated items are not auto-journalised from the statement feed.,True,Accepted,,,Pending review
+EXC-00131,C-04,MISSING_GL_POSTING,High,US01,26578.2,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,True,Accepted,,,Pending review
+EXC-00080,C-13,AGED_OPEN_ITEM,High,UK01,25514.0,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,True,Accepted,,,Accepted
+EXC-00005,C-03,UNAPPLIED_PAYMENT,High,UK01,25066.79,rules,0.74,Apply cash to open invoice,8773.38,Medium,Disbursement can be released without a matched invoice reference.,True,Accepted,,,Accepted with edits
+EXC-00020,C-03,UNAPPLIED_PAYMENT,Medium,US01,24824.12,rules,0.74,Apply cash to open invoice,8688.44,Medium,Disbursement can be released without a matched invoice reference.,False,Accepted,,,Auto-routed to queue
+EXC-00019,C-13,AGED_OPEN_ITEM,Medium,US01,24739.83,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted with edits
+EXC-00083,C-13,AGED_OPEN_ITEM,Medium,US01,22981.5,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00104,C-02,DUPLICATE_PAYMENT,High,CA01,22787.17,rules,0.9,Recover from vendor,22787.17,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00076,C-01,DUPLICATE_INVOICE,Medium,CA01,22402.99,rules,0.88,Reverse duplicate accrual,22402.99,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted
+EXC-00128,C-02,DUPLICATE_PAYMENT,High,US01,20127.9,rules,0.9,Recover from vendor,20127.9,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00051,C-13,AGED_OPEN_ITEM,Medium,US01,20076.61,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00109,C-05,PAYMENT_AMOUNT_MISMATCH,Medium,US01,18965.05,rules,0.8,Request credit memo,11379.03,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00013,C-02,DUPLICATE_PAYMENT,High,UK01,18823.68,rules,0.9,Recover from vendor,18823.68,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00002,C-01,DUPLICATE_INVOICE,Medium,UK01,18823.68,rules,0.88,Reverse duplicate accrual,18823.68,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted
+EXC-00130,C-02,DUPLICATE_PAYMENT,High,US01,17191.43,rules,0.9,Recover from vendor,17191.43,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Pending review
+EXC-00073,C-13,AGED_OPEN_ITEM,Medium,CA01,16327.04,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00026,C-13,AGED_OPEN_ITEM,Medium,UK01,15928.09,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Auto-routed to queue
+EXC-00099,C-13,AGED_OPEN_ITEM,Medium,UK01,15626.78,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Auto-routed to queue
+EXC-00037,C-13,AGED_OPEN_ITEM,Medium,UK01,14882.66,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Auto-routed to queue
+EXC-00098,C-13,AGED_OPEN_ITEM,Medium,CA01,14835.74,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00015,C-06,GL_CASH_NOT_ON_STATEMENT,Medium,US01,14576.37,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,False,Accepted,,,Accepted with edits
+EXC-00149,C-04,MISSING_GL_POSTING,Medium,US01,14442.26,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Auto-routed to queue
+EXC-00136,C-04,MISSING_GL_POSTING,Medium,US01,13820.17,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Auto-routed to queue
+EXC-00085,C-13,AGED_OPEN_ITEM,Medium,US01,13288.81,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00101,C-01,DUPLICATE_INVOICE,Medium,US01,12390.74,rules,0.88,Reverse duplicate accrual,12390.74,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted
+EXC-00105,C-07,UNBALANCED_JOURNAL,Medium,UK01,11721.54,rules,0.92,Post correcting journal,0.0,High,Journal upload accepts a file that does not balance.,False,Accepted,,,Accepted
+EXC-00028,C-01,DUPLICATE_INVOICE,Medium,US01,10241.45,rules,0.88,Reverse duplicate accrual,10241.45,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted
+EXC-00055,C-13,AGED_OPEN_ITEM,Medium,US01,10241.45,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted with edits
+EXC-00081,C-13,AGED_OPEN_ITEM,Medium,CA01,10088.23,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00042,C-06,GL_CASH_NOT_ON_STATEMENT,Medium,US01,9477.55,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,False,Accepted,,,Accepted with edits
+EXC-00008,C-07,UNBALANCED_JOURNAL,Medium,UK01,7861.52,rules,0.92,Post correcting journal,0.0,High,Journal upload accepts a file that does not balance.,False,Accepted,,,Accepted
+EXC-00007,C-05,PAYMENT_AMOUNT_MISMATCH,Medium,CA01,7688.93,rules,0.8,Request credit memo,4613.36,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00064,C-13,AGED_OPEN_ITEM,Medium,UK01,7174.69,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00107,C-07,UNBALANCED_JOURNAL,Medium,CA01,7128.98,rules,0.92,Post correcting journal,0.0,High,Journal upload accepts a file that does not balance.,False,Accepted,,,Accepted
+EXC-00092,C-06,GL_CASH_NOT_ON_STATEMENT,Medium,UK01,6783.96,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,False,Accepted,,,Accepted
+EXC-00137,C-07,UNBALANCED_JOURNAL,Medium,UK01,6735.55,rules,0.92,Post correcting journal,0.0,High,Journal upload accepts a file that does not balance.,False,Accepted,,,Auto-routed to queue
+EXC-00114,C-07,UNBALANCED_JOURNAL,Medium,CA01,5908.9,rules,0.92,Post correcting journal,0.0,High,Journal upload accepts a file that does not balance.,False,Accepted,,,Accepted
+EXC-00086,C-02,DUPLICATE_PAYMENT,High,US01,4959.35,rules,0.9,Recover from vendor,4959.35,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted with edits
+EXC-00096,C-06,GL_CASH_NOT_ON_STATEMENT,Low,CA01,4676.35,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,False,Accepted,,,Accepted with edits
+EXC-00001,C-09,FX_RATE_ERROR,Low,UK01,4577.42,rules,0.84,Post correcting journal,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Accepted
+EXC-00024,C-03,UNAPPLIED_PAYMENT,Low,CA01,4326.71,rules,0.74,Apply cash to open invoice,1514.35,Medium,Disbursement can be released without a matched invoice reference.,False,Accepted,,,Accepted
+EXC-00023,C-01,DUPLICATE_INVOICE,Low,US01,4113.84,rules,0.88,Reverse duplicate accrual,4113.84,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted with edits
+EXC-00091,C-01,DUPLICATE_INVOICE,Low,UK01,4062.7,rules,0.88,Reverse duplicate accrual,4062.7,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted
+EXC-00129,C-02,DUPLICATE_PAYMENT,High,UK01,3873.63,rules,0.9,Recover from vendor,3873.63,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00069,C-02,DUPLICATE_PAYMENT,High,US01,3700.9,rules,0.9,Recover from vendor,3700.9,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Pending review
+EXC-00140,C-06,BANK_ITEM_NOT_IN_GL,Low,CA01,3681.0,rules,0.82,Post correcting journal,0.0,Low,Bank-originated items are not auto-journalised from the statement feed.,False,Accepted,,,Auto-routed to queue
+EXC-00157,C-01,DUPLICATE_INVOICE,Low,US01,3677.14,rules,0.88,Reverse duplicate accrual,3677.14,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Auto-routed to queue
+EXC-00147,C-06,GL_CASH_NOT_ON_STATEMENT,Low,US01,3664.31,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,False,Accepted,,,Auto-routed to queue
+EXC-00102,C-07,UNBALANCED_JOURNAL,Low,UK01,3494.79,rules,0.92,Post correcting journal,0.0,High,Journal upload accepts a file that does not balance.,False,Accepted,,,Accepted
+EXC-00066,C-06,BANK_ITEM_NOT_IN_GL,Low,UK01,3350.22,rules,0.82,Post correcting journal,0.0,Low,Bank-originated items are not auto-journalised from the statement feed.,False,Accepted,,,Accepted
+EXC-00141,C-01,DUPLICATE_INVOICE,Low,US01,3256.49,rules,0.88,Reverse duplicate accrual,3256.49,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Auto-routed to queue
+EXC-00155,C-04,MISSING_GL_POSTING,Low,US01,3169.35,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Auto-routed to queue
+EXC-00088,C-13,AGED_OPEN_ITEM,Low,CA01,3137.6,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00119,C-04,MISSING_GL_POSTING,Low,US01,2983.92,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Accepted
+EXC-00022,C-01,DUPLICATE_INVOICE,Low,UK01,2733.58,rules,0.88,Reverse duplicate accrual,2733.58,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted with edits
+EXC-00153,C-02,DUPLICATE_PAYMENT,High,US01,2620.05,rules,0.9,Recover from vendor,2620.05,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00016,C-13,AGED_OPEN_ITEM,Low,CA01,2611.71,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00063,C-05,PAYMENT_AMOUNT_MISMATCH,Low,US01,2474.76,rules,0.8,Request credit memo,1484.86,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00139,C-04,MISSING_GL_POSTING,Low,US01,2415.15,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Auto-routed to queue
+EXC-00152,C-09,FX_RATE_ERROR,Low,US01,2383.55,rules,0.84,Post correcting journal,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Auto-routed to queue
+EXC-00158,C-11,GL_SUBLEDGER_VARIANCE,Critical,CA01,2360.23,rules,0.8,Escalate to controller,0.0,High,No monthly tie-out control with a documented variance decomposition.,True,Accepted,,,Pending review
+EXC-00012,C-04,MISSING_GL_POSTING,Low,CA01,2302.85,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Accepted
+EXC-00030,C-13,AGED_OPEN_ITEM,Low,CA01,2302.85,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00010,C-13,AGED_OPEN_ITEM,Low,UK01,2101.12,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00112,C-06,BANK_ITEM_NOT_IN_GL,Low,CA01,1944.48,rules,0.82,Post correcting journal,0.0,Low,Bank-originated items are not auto-journalised from the statement feed.,False,Accepted,,,Accepted
+EXC-00062,C-02,DUPLICATE_PAYMENT,High,UK01,1805.7,rules,0.9,Recover from vendor,1805.7,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00038,C-01,DUPLICATE_INVOICE,Low,UK01,1716.03,rules,0.88,Reverse duplicate accrual,1716.03,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Accepted
+EXC-00094,C-13,AGED_OPEN_ITEM,Low,CA01,1610.43,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Auto-routed to queue
+EXC-00053,C-09,FX_RATE_ERROR,Low,US01,1388.61,rules,0.84,Post correcting journal,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Accepted with edits
+EXC-00126,C-07,UNBALANCED_JOURNAL,Low,UK01,1379.93,rules,0.92,Post correcting journal,0.0,High,Journal upload accepts a file that does not balance.,False,Accepted,,,Auto-routed to queue
+EXC-00054,C-05,PAYMENT_AMOUNT_MISMATCH,Low,US01,1200.15,rules,0.8,Request credit memo,720.09,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00143,C-04,MISSING_GL_POSTING,Low,US01,1069.03,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Accepted
+EXC-00056,C-05,PAYMENT_AMOUNT_MISMATCH,Low,CA01,1065.2,rules,0.8,Request credit memo,639.12,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Auto-routed to queue
+EXC-00138,C-01,DUPLICATE_INVOICE,Low,US01,1016.28,rules,0.88,Reverse duplicate accrual,1016.28,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Auto-routed to queue
+EXC-00121,C-04,MISSING_GL_POSTING,Low,US01,993.08,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Auto-routed to queue
+EXC-00052,C-06,BANK_ITEM_NOT_IN_GL,Low,CA01,981.64,rules,0.82,Post correcting journal,0.0,Low,Bank-originated items are not auto-journalised from the statement feed.,False,Accepted,,,Accepted
+EXC-00089,C-05,PAYMENT_AMOUNT_MISMATCH,Low,US01,929.12,rules,0.8,Request credit memo,557.47,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00043,C-09,FX_RATE_ERROR,Low,UK01,920.5,rules,0.84,Post correcting journal,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Accepted
+EXC-00050,C-13,AGED_OPEN_ITEM,Low,US01,905.31,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00074,C-13,AGED_OPEN_ITEM,Low,UK01,866.75,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00036,C-06,GL_CASH_NOT_ON_STATEMENT,Low,UK01,739.19,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,False,Accepted,,,Accepted with edits
+EXC-00046,C-05,PAYMENT_AMOUNT_MISMATCH,Low,US01,645.78,rules,0.8,Request credit memo,387.47,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00134,C-02,DUPLICATE_PAYMENT,High,CA01,606.92,rules,0.9,Recover from vendor,606.92,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00123,C-04,MISSING_GL_POSTING,Low,UK01,569.13,rules,0.86,Post correcting journal,0.0,High,No completeness reconciliation on the nightly sub-ledger interface.,False,Accepted,,,Auto-routed to queue
+EXC-00068,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,562.58,rules,0.8,Request credit memo,337.55,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Auto-routed to queue
+EXC-00061,C-02,DUPLICATE_PAYMENT,High,CA01,518.57,rules,0.9,Recover from vendor,518.57,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00041,C-05,PAYMENT_AMOUNT_MISMATCH,Low,CA01,458.34,rules,0.8,Request credit memo,275.0,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted with edits
+EXC-00035,C-06,GL_CASH_NOT_ON_STATEMENT,Low,UK01,430.45,rules,0.78,Confirm with bank,0.0,Medium,No ageing control on issued-but-uncleared disbursements.,False,Accepted,,,Accepted with edits
+EXC-00032,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,428.07,rules,0.8,Request credit memo,256.84,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00146,C-05,PAYMENT_AMOUNT_MISMATCH,Low,CA01,423.06,rules,0.8,Request credit memo,253.84,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Auto-routed to queue
+EXC-00017,C-13,AGED_OPEN_ITEM,Low,CA01,402.33,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Auto-routed to queue
+EXC-00039,C-13,AGED_OPEN_ITEM,Low,UK01,399.98,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Auto-routed to queue
+EXC-00116,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,372.9,rules,0.8,Request credit memo,223.74,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Auto-routed to queue
+EXC-00132,C-06,BANK_ITEM_NOT_IN_GL,Low,CA01,358.93,rules,0.82,Post correcting journal,0.0,Low,Bank-originated items are not auto-journalised from the statement feed.,False,Accepted,,,Auto-routed to queue
+EXC-00034,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,351.76,rules,0.8,Request credit memo,211.06,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00108,C-01,DUPLICATE_INVOICE,Low,US01,308.92,rules,0.88,Reverse duplicate accrual,308.92,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Auto-routed to queue
+EXC-00072,C-09,FX_RATE_ERROR,Low,UK01,306.57,rules,0.84,Post correcting journal,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Accepted
+EXC-00079,C-09,FX_RATE_ERROR,Low,US01,291.77,rules,0.84,Post correcting journal,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Accepted
+EXC-00048,C-13,AGED_OPEN_ITEM,Low,UK01,287.2,rules,0.7,Escalate to controller,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Auto-routed to queue
+EXC-00045,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,272.91,rules,0.8,Request credit memo,163.75,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted with edits
+EXC-00142,C-05,PAYMENT_AMOUNT_MISMATCH,Low,US01,125.55,rules,0.8,Write off below threshold,75.33,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Auto-routed to queue
+EXC-00154,C-09,FX_RATE_ERROR,Low,CA01,119.37,rules,0.84,Write off below threshold,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Auto-routed to queue
+EXC-00029,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,117.64,rules,0.8,Write off below threshold,70.58,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00124,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,85.32,rules,0.8,Write off below threshold,51.19,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00087,C-05,PAYMENT_AMOUNT_MISMATCH,Low,US01,76.02,rules,0.8,Write off below threshold,45.61,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Auto-routed to queue
+EXC-00011,C-09,FX_RATE_ERROR,Low,UK01,44.56,rules,0.84,Write off below threshold,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Accepted
+EXC-00071,C-05,PAYMENT_AMOUNT_MISMATCH,Low,UK01,35.89,rules,0.8,Write off below threshold,21.53,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Accepted
+EXC-00075,C-09,FX_RATE_ERROR,Low,US01,32.47,rules,0.84,Write off below threshold,0.0,Medium,Manual rate override is permitted at invoice entry.,False,Accepted,,,Accepted with edits
+EXC-00106,C-01,DUPLICATE_INVOICE,Low,UK01,28.51,rules,0.88,Reverse duplicate accrual,28.51,High,No uniqueness check on normalised vendor invoice number at entry.,False,Accepted,,,Auto-routed to queue
+EXC-00049,C-02,DUPLICATE_PAYMENT,High,UK01,21.93,rules,0.9,Recover from vendor,21.93,High,Payment proposal does not exclude invoices with a cleared payment.,True,Accepted,,,Accepted
+EXC-00100,C-13,AGED_OPEN_ITEM,Low,CA01,16.28,rules,0.7,Write off below threshold,0.0,Low,No escalation path on payables beyond 90 days past due.,False,Accepted,,,Accepted
+EXC-00125,C-05,PAYMENT_AMOUNT_MISMATCH,Low,CA01,3.16,rules,0.8,Write off below threshold,1.9,Medium,Payments can be released at an amount other than the matched invoice.,False,Accepted,,,Auto-routed to queue
+EXC-00082,C-12,DUPLICATE_VENDOR_MASTER,Medium,ALL,0.0,rules,0.9,Merge vendor master records,0.0,High,No duplicate check on bank account or tax ID at vendor creation.,False,Accepted,,,Accepted
+EXC-00067,C-12,DUPLICATE_VENDOR_MASTER,Medium,ALL,0.0,rules,0.9,Merge vendor master records,0.0,High,No duplicate check on bank account or tax ID at vendor creation.,False,Accepted,,,Accepted
+EXC-00027,C-12,DUPLICATE_VENDOR_MASTER,Medium,ALL,0.0,rules,0.9,Merge vendor master records,0.0,High,No duplicate check on bank account or tax ID at vendor creation.,False,Accepted,,,Accepted
+EXC-00003,C-12,DUPLICATE_VENDOR_MASTER,Medium,ALL,0.0,rules,0.9,Merge vendor master records,0.0,High,No duplicate check on bank account or tax ID at vendor creation.,False,Accepted,,,Accepted

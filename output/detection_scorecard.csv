@@ -1,0 +1,15 @@
+control_id,control_name,exception_type,seeded,detected,true_positives,false_negatives,corroborating_detections,false_positives,recall_pct,pair_recall_pct,precision_pct,note
+C-01,Duplicate invoice detection,DUPLICATE_INVOICE,16.0,16,15.0,1.0,1.0,0.0,93.8,100.0,100.0,
+C-02,Duplicate payment detection,DUPLICATE_PAYMENT,12.0,15,12.0,0.0,3.0,0.0,100.0,100.0,100.0,
+C-03,Unapplied cash / payment without invoice,UNAPPLIED_PAYMENT,14.0,14,14.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-04,AP sub-ledger to GL completeness,MISSING_GL_POSTING,13.0,13,13.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-05,Payment to invoice amount agreement,PAYMENT_AMOUNT_MISMATCH,20.0,20,20.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-06,Bank statement to GL cash reconciliation,BANK_ITEM_NOT_IN_GL,6.0,6,6.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-06,Bank statement to GL cash reconciliation,GL_CASH_NOT_ON_STATEMENT,9.0,9,9.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-07,Journal entry debit/credit balance,UNBALANCED_JOURNAL,7.0,7,7.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-08,Segregation of duties on manual journals,SOD_VIOLATION,10.0,10,10.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-09,FX translation rate accuracy,FX_RATE_ERROR,9.0,9,9.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-10,Topside entries to AP control account,TOPSIDE_AP_ENTRY,5.0,5,5.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-12,Vendor master duplicate detection,DUPLICATE_VENDOR_MASTER,4.0,4,4.0,0.0,0.0,0.0,100.0,100.0,100.0,
+C-11,AP control account tie-out (GL vs sub-ledger),GL_SUBLEDGER_VARIANCE,,3,,,,,,,,Derived tie-out - no seeded population
+C-13,Aged open payable review,AGED_OPEN_ITEM,,29,,,,,,,,Operational aging review - no seeded population

@@ -1,0 +1,1140 @@
+{
+  "meta": {
+    "company": "Northwind Services Group",
+    "as_of_date": "2026-09-30",
+    "period_range": "2026-01 to 2026-09",
+    "generated_at": "2026-11-11T23:30:56",
+    "thresholds": {
+      "payment_tolerance_abs_usd": 5.0,
+      "payment_tolerance_pct": 0.005,
+      "journal_balance_tolerance_usd": 0.05,
+      "fx_tolerance_abs_usd": 25.0,
+      "fx_tolerance_pct": 0.01,
+      "tieout_threshold_usd": 1000.0,
+      "aged_item_days": 90,
+      "severity_ladder_usd": {
+        "critical": 75000,
+        "high": 25000,
+        "medium": 5000
+      }
+    }
+  },
+  "population": {
+    "vendors": 62,
+    "invoices": 1816,
+    "invoice_value_usd": 42578320.29,
+    "payments": 1600,
+    "payment_value_usd": 38669824.03,
+    "gl_lines": 8779,
+    "gl_value_usd": 84273370.59,
+    "bank_transactions": 1597,
+    "controls_run": 13
+  },
+  "kpis": {
+    "total_exceptions": 160,
+    "total_exception_value_usd": 6022386.63,
+    "open_exceptions": 55,
+    "open_exception_value_usd": 2827643.59,
+    "resolved_exceptions": 105,
+    "exception_rate_pct": 8.81,
+    "critical_open": 12,
+    "sla_breached_open": 38,
+    "avg_days_to_resolve": 12.8,
+    "recovered_amount_usd": 432575.77,
+    "cash_at_risk_usd": 1597831.12,
+    "unreconciled_ap_variance_usd": 314870.82,
+    "unexplained_residual_usd": 0.01,
+    "open_ap_balance_usd": 5130500.15,
+    "past_due_balance_usd": 2350346.03,
+    "detection_recall_pct": 99.2,
+    "detection_pair_recall_pct": 100.0,
+    "detection_precision_pct": 100.0,
+    "detection_false_positives": 0,
+    "seeded_defects": 125
+  },
+  "by_control": [
+    {
+      "control_id": "C-08",
+      "control_name": "Segregation of duties on manual journals",
+      "exception_type": "SOD_VIOLATION",
+      "count": 10,
+      "value_usd": 1422847.7
+    },
+    {
+      "control_id": "C-10",
+      "control_name": "Topside entries to AP control account",
+      "exception_type": "TOPSIDE_AP_ENTRY",
+      "count": 5,
+      "value_usd": 1368423.66
+    },
+    {
+      "control_id": "C-02",
+      "control_name": "Duplicate payment detection",
+      "exception_type": "DUPLICATE_PAYMENT",
+      "count": 15,
+      "value_usd": 705425.54
+    },
+    {
+      "control_id": "C-03",
+      "control_name": "Unapplied cash / payment without invoice",
+      "exception_type": "UNAPPLIED_PAYMENT",
+      "count": 14,
+      "value_usd": 606237.54
+    },
+    {
+      "control_id": "C-13",
+      "control_name": "Aged open payable review",
+      "exception_type": "AGED_OPEN_ITEM",
+      "count": 29,
+      "value_usd": 527572.89
+    },
+    {
+      "control_id": "C-06",
+      "control_name": "Bank statement to GL cash reconciliation",
+      "exception_type": "GL_CASH_NOT_ON_STATEMENT",
+      "count": 9,
+      "value_usd": 403467.95
+    },
+    {
+      "control_id": "C-11",
+      "control_name": "AP control account tie-out (GL vs sub-ledger)",
+      "exception_type": "GL_SUBLEDGER_VARIANCE",
+      "count": 3,
+      "value_usd": 314870.82
+    },
+    {
+      "control_id": "C-04",
+      "control_name": "AP sub-ledger to GL completeness",
+      "exception_type": "MISSING_GL_POSTING",
+      "count": 13,
+      "value_usd": 294527.54
+    },
+    {
+      "control_id": "C-01",
+      "control_name": "Duplicate invoice detection",
+      "exception_type": "DUPLICATE_INVOICE",
+      "count": 16,
+      "value_usd": 249885.85
+    },
+    {
+      "control_id": "C-07",
+      "control_name": "Journal entry debit/credit balance",
+      "exception_type": "UNBALANCED_JOURNAL",
+      "count": 7,
+      "value_usd": 44231.21
+    },
+    {
+      "control_id": "C-06",
+      "control_name": "Bank statement to GL cash reconciliation",
+      "exception_type": "BANK_ITEM_NOT_IN_GL",
+      "count": 6,
+      "value_usd": 38548.92
+    },
+    {
+      "control_id": "C-05",
+      "control_name": "Payment to invoice amount agreement",
+      "exception_type": "PAYMENT_AMOUNT_MISMATCH",
+      "count": 20,
+      "value_usd": 36282.19
+    },
+    {
+      "control_id": "C-09",
+      "control_name": "FX translation rate accuracy",
+      "exception_type": "FX_RATE_ERROR",
+      "count": 9,
+      "value_usd": 10064.82
+    },
+    {
+      "control_id": "C-12",
+      "control_name": "Vendor master duplicate detection",
+      "exception_type": "DUPLICATE_VENDOR_MASTER",
+      "count": 4,
+      "value_usd": 0.0
+    }
+  ],
+  "by_severity": [
+    {
+      "severity": "Critical",
+      "count": 24,
+      "value_usd": 4228500.02
+    },
+    {
+      "severity": "High",
+      "count": 37,
+      "value_usd": 1296122.83
+    },
+    {
+      "severity": "Medium",
+      "count": 33,
+      "value_usd": 399985.19
+    },
+    {
+      "severity": "Low",
+      "count": 66,
+      "value_usd": 97778.59
+    }
+  ],
+  "by_entity": [
+    {
+      "entity": "US01",
+      "count": 57,
+      "value_usd": 2831260.92
+    },
+    {
+      "entity": "UK01",
+      "count": 58,
+      "value_usd": 1690703.29
+    },
+    {
+      "entity": "CA01",
+      "count": 41,
+      "value_usd": 1500422.42
+    },
+    {
+      "entity": "ALL",
+      "count": 4,
+      "value_usd": 0.0
+    }
+  ],
+  "by_status": [
+    {
+      "exception_status": "Resolved",
+      "count": 105,
+      "value_usd": 3194743.04
+    },
+    {
+      "exception_status": "Open",
+      "count": 28,
+      "value_usd": 1676866.23
+    },
+    {
+      "exception_status": "In Review",
+      "count": 27,
+      "value_usd": 1150777.36
+    }
+  ],
+  "by_queue": [
+    {
+      "assigned_queue": "Controllership Review",
+      "count": 15,
+      "value_usd": 2791271.36
+    },
+    {
+      "assigned_queue": "AP Operations",
+      "count": 94,
+      "value_usd": 2125404.01
+    },
+    {
+      "assigned_queue": "GL & Close Team",
+      "count": 32,
+      "value_usd": 663694.39
+    },
+    {
+      "assigned_queue": "Treasury & Cash Operations",
+      "count": 15,
+      "value_usd": 442016.87
+    },
+    {
+      "assigned_queue": "Vendor Master Data",
+      "count": 4,
+      "value_usd": 0.0
+    }
+  ],
+  "by_root_cause": [
+    {
+      "root_cause_category": "Preparer and approver are the same user",
+      "count": 10,
+      "value_usd": 1422847.7
+    },
+    {
+      "root_cause_category": "Close adjustment booked without sub-ledger support",
+      "count": 5,
+      "value_usd": 1368423.66
+    },
+    {
+      "root_cause_category": "Payment run picked up an already-settled item",
+      "count": 15,
+      "value_usd": 705425.54
+    },
+    {
+      "root_cause_category": "Disbursement released without invoice application",
+      "count": 14,
+      "value_usd": 606237.54
+    },
+    {
+      "root_cause_category": "Unresolved dispute or missing approval blocking settlement",
+      "count": 29,
+      "value_usd": 527572.89
+    },
+    {
+      "root_cause_category": "Payment issued but not cleared by the bank",
+      "count": 9,
+      "value_usd": 403467.95
+    },
+    {
+      "root_cause_category": "Aggregate effect of upstream posting exceptions",
+      "count": 3,
+      "value_usd": 314870.82
+    },
+    {
+      "root_cause_category": "Sub-ledger to GL interface drop",
+      "count": 13,
+      "value_usd": 294527.54
+    },
+    {
+      "root_cause_category": "Manual re-keying / no invoice-number uniqueness check",
+      "count": 16,
+      "value_usd": 249885.85
+    },
+    {
+      "root_cause_category": "Partial or truncated journal upload",
+      "count": 7,
+      "value_usd": 44231.21
+    },
+    {
+      "root_cause_category": "Bank-originated item never journalised",
+      "count": 6,
+      "value_usd": 38548.92
+    },
+    {
+      "root_cause_category": "Short pay / overpay not matched to a credit memo",
+      "count": 20,
+      "value_usd": 36282.19
+    },
+    {
+      "root_cause_category": "Manual rate override instead of the published period rate",
+      "count": 9,
+      "value_usd": 10064.82
+    },
+    {
+      "root_cause_category": "Vendor created without duplicate-check on bank/tax ID",
+      "count": 4,
+      "value_usd": 0.0
+    }
+  ],
+  "open_by_severity": [
+    {
+      "severity": "Critical",
+      "count": 12,
+      "value_usd": 2291096.22
+    },
+    {
+      "severity": "High",
+      "count": 10,
+      "value_usd": 397938.19
+    },
+    {
+      "severity": "Medium",
+      "count": 7,
+      "value_usd": 106259.63
+    },
+    {
+      "severity": "Low",
+      "count": 26,
+      "value_usd": 32349.55
+    }
+  ],
+  "trend": [
+    {
+      "period": "2026-01",
+      "raised": 2,
+      "raised_value_usd": 23401.1,
+      "cleared": 1
+    },
+    {
+      "period": "2026-02",
+      "raised": 10,
+      "raised_value_usd": 215525.19,
+      "cleared": 7
+    },
+    {
+      "period": "2026-03",
+      "raised": 24,
+      "raised_value_usd": 713543.56,
+      "cleared": 13
+    },
+    {
+      "period": "2026-04",
+      "raised": 18,
+      "raised_value_usd": 490410.56,
+      "cleared": 15
+    },
+    {
+      "period": "2026-05",
+      "raised": 14,
+      "raised_value_usd": 1146073.73,
+      "cleared": 19
+    },
+    {
+      "period": "2026-06",
+      "raised": 33,
+      "raised_value_usd": 752045.45,
+      "cleared": 19
+    },
+    {
+      "period": "2026-07",
+      "raised": 17,
+      "raised_value_usd": 1035535.41,
+      "cleared": 17
+    },
+    {
+      "period": "2026-08",
+      "raised": 13,
+      "raised_value_usd": 389060.28,
+      "cleared": 7
+    },
+    {
+      "period": "2026-09",
+      "raised": 29,
+      "raised_value_usd": 1256791.35,
+      "cleared": 5
+    }
+  ],
+  "backlog": [
+    {
+      "period": "2026-01",
+      "open_backlog": 1
+    },
+    {
+      "period": "2026-02",
+      "open_backlog": 4
+    },
+    {
+      "period": "2026-03",
+      "open_backlog": 15
+    },
+    {
+      "period": "2026-04",
+      "open_backlog": 18
+    },
+    {
+      "period": "2026-05",
+      "open_backlog": 13
+    },
+    {
+      "period": "2026-06",
+      "open_backlog": 27
+    },
+    {
+      "period": "2026-07",
+      "open_backlog": 27
+    },
+    {
+      "period": "2026-08",
+      "open_backlog": 33
+    },
+    {
+      "period": "2026-09",
+      "open_backlog": 57
+    }
+  ],
+  "aging": [
+    {
+      "aging_bucket": "Current",
+      "invoices": 148,
+      "open_balance_usd": 2780154.12
+    },
+    {
+      "aging_bucket": "1-30",
+      "invoices": 50,
+      "open_balance_usd": 1025593.64
+    },
+    {
+      "aging_bucket": "31-60",
+      "invoices": 25,
+      "open_balance_usd": 543675.34
+    },
+    {
+      "aging_bucket": "61-90",
+      "invoices": 14,
+      "open_balance_usd": 253504.16
+    },
+    {
+      "aging_bucket": "91-180",
+      "invoices": 18,
+      "open_balance_usd": 223128.37
+    },
+    {
+      "aging_bucket": "180+",
+      "invoices": 11,
+      "open_balance_usd": 304444.52
+    }
+  ],
+  "aging_by_entity": [
+    {
+      "entity": "CA01",
+      "aging_bucket": "1-30",
+      "open_balance_usd": 186466.26
+    },
+    {
+      "entity": "CA01",
+      "aging_bucket": "180+",
+      "open_balance_usd": 5316.89
+    },
+    {
+      "entity": "CA01",
+      "aging_bucket": "31-60",
+      "open_balance_usd": 332414.37
+    },
+    {
+      "entity": "CA01",
+      "aging_bucket": "61-90",
+      "open_balance_usd": 56446.35
+    },
+    {
+      "entity": "CA01",
+      "aging_bucket": "91-180",
+      "open_balance_usd": 46015.32
+    },
+    {
+      "entity": "CA01",
+      "aging_bucket": "Current",
+      "open_balance_usd": 927218.07
+    },
+    {
+      "entity": "UK01",
+      "aging_bucket": "1-30",
+      "open_balance_usd": 299962.72
+    },
+    {
+      "entity": "UK01",
+      "aging_bucket": "180+",
+      "open_balance_usd": 184171.81
+    },
+    {
+      "entity": "UK01",
+      "aging_bucket": "31-60",
+      "open_balance_usd": 130163.57
+    },
+    {
+      "entity": "UK01",
+      "aging_bucket": "61-90",
+      "open_balance_usd": 108717.81
+    },
+    {
+      "entity": "UK01",
+      "aging_bucket": "91-180",
+      "open_balance_usd": 109619.37
+    },
+    {
+      "entity": "UK01",
+      "aging_bucket": "Current",
+      "open_balance_usd": 1309177.84
+    },
+    {
+      "entity": "US01",
+      "aging_bucket": "1-30",
+      "open_balance_usd": 539164.66
+    },
+    {
+      "entity": "US01",
+      "aging_bucket": "180+",
+      "open_balance_usd": 114955.82
+    },
+    {
+      "entity": "US01",
+      "aging_bucket": "31-60",
+      "open_balance_usd": 81097.4
+    },
+    {
+      "entity": "US01",
+      "aging_bucket": "61-90",
+      "open_balance_usd": 88340.0
+    },
+    {
+      "entity": "US01",
+      "aging_bucket": "91-180",
+      "open_balance_usd": 67493.68
+    },
+    {
+      "entity": "US01",
+      "aging_bucket": "Current",
+      "open_balance_usd": 543758.21
+    }
+  ],
+  "tieout": [
+    {
+      "entity": "CA01",
+      "subledger_ap_open_usd": 1453405.53,
+      "gl_ap_control_usd": 1451045.3,
+      "variance_usd": -2360.23,
+      "explained_missing_gl_postings_usd": -2302.85,
+      "explained_fx_posting_errors_usd": -119.33,
+      "explained_topside_entries_usd": 0.0,
+      "explained_fx_on_settlement_usd": 61.96,
+      "explained_total_usd": -2360.22,
+      "unexplained_residual_usd": -0.01,
+      "within_threshold": false
+    },
+    {
+      "entity": "UK01",
+      "subledger_ap_open_usd": 1941168.36,
+      "gl_ap_control_usd": 1979639.2,
+      "variance_usd": 38470.84,
+      "explained_missing_gl_postings_usd": -148331.29,
+      "explained_fx_posting_errors_usd": -4008.09,
+      "explained_topside_entries_usd": 190807.17,
+      "explained_fx_on_settlement_usd": 3.02,
+      "explained_total_usd": 38470.81,
+      "unexplained_residual_usd": 0.03,
+      "within_threshold": false
+    },
+    {
+      "entity": "US01",
+      "subledger_ap_open_usd": 1086786.3,
+      "gl_ap_control_usd": 1360826.05,
+      "variance_usd": 274039.75,
+      "explained_missing_gl_postings_usd": -143893.4,
+      "explained_fx_posting_errors_usd": 3447.93,
+      "explained_topside_entries_usd": 414924.35,
+      "explained_fx_on_settlement_usd": -439.12,
+      "explained_total_usd": 274039.76,
+      "unexplained_residual_usd": -0.01,
+      "within_threshold": false
+    }
+  ],
+  "mttr_by_control": [
+    {
+      "control_id": "C-01",
+      "avg_days_to_resolve": 12.9,
+      "control_name": "Duplicate invoice detection"
+    },
+    {
+      "control_id": "C-02",
+      "avg_days_to_resolve": 4.8,
+      "control_name": "Duplicate payment detection"
+    },
+    {
+      "control_id": "C-03",
+      "avg_days_to_resolve": 8.7,
+      "control_name": "Unapplied cash / payment without invoice"
+    },
+    {
+      "control_id": "C-04",
+      "avg_days_to_resolve": 12.0,
+      "control_name": "AP sub-ledger to GL completeness"
+    },
+    {
+      "control_id": "C-05",
+      "avg_days_to_resolve": 21.8,
+      "control_name": "Payment to invoice amount agreement"
+    },
+    {
+      "control_id": "C-06",
+      "avg_days_to_resolve": 16.2,
+      "control_name": "Bank statement to GL cash reconciliation"
+    },
+    {
+      "control_id": "C-07",
+      "avg_days_to_resolve": 12.8,
+      "control_name": "Journal entry debit/credit balance"
+    },
+    {
+      "control_id": "C-08",
+      "avg_days_to_resolve": 2.6,
+      "control_name": "Segregation of duties on manual journals"
+    },
+    {
+      "control_id": "C-09",
+      "avg_days_to_resolve": 22.7,
+      "control_name": "FX translation rate accuracy"
+    },
+    {
+      "control_id": "C-10",
+      "avg_days_to_resolve": 3.0,
+      "control_name": "Topside entries to AP control account"
+    },
+    {
+      "control_id": "C-11",
+      "avg_days_to_resolve": 1.0,
+      "control_name": "AP control account tie-out (GL vs sub-ledger)"
+    },
+    {
+      "control_id": "C-12",
+      "avg_days_to_resolve": 10.2,
+      "control_name": "Vendor master duplicate detection"
+    },
+    {
+      "control_id": "C-13",
+      "avg_days_to_resolve": 13.2,
+      "control_name": "Aged open payable review"
+    }
+  ],
+  "top_vendors": [
+    {
+      "vendor_id": "V1006",
+      "exceptions": 1,
+      "value_usd": 320546.38,
+      "vendor_name": "Zenith Field Services",
+      "vendor_category": "Subcontractor",
+      "risk_tier": "Low"
+    },
+    {
+      "vendor_id": "V1043",
+      "exceptions": 1,
+      "value_usd": 318848.11,
+      "vendor_name": "Overton Partners LLP",
+      "vendor_category": "Professional Services",
+      "risk_tier": "Medium"
+    },
+    {
+      "vendor_id": "V1001",
+      "exceptions": 3,
+      "value_usd": 200960.05,
+      "vendor_name": "Quarry Hill Advisory LLP",
+      "vendor_category": "Professional Services",
+      "risk_tier": "Low"
+    },
+    {
+      "vendor_id": "V1005",
+      "exceptions": 3,
+      "value_usd": 158394.83,
+      "vendor_name": "Pinnacle Supply Chain Ltd",
+      "vendor_category": "Logistics",
+      "risk_tier": "Low"
+    },
+    {
+      "vendor_id": "V1003",
+      "exceptions": 6,
+      "value_usd": 121606.14,
+      "vendor_name": "Lochmere Media Group",
+      "vendor_category": "Marketing Agency",
+      "risk_tier": "Low"
+    },
+    {
+      "vendor_id": "V1035",
+      "exceptions": 2,
+      "value_usd": 97065.71,
+      "vendor_name": "Clearwater Software Ltd",
+      "vendor_category": "IT & Software",
+      "risk_tier": "Low"
+    },
+    {
+      "vendor_id": "V1027",
+      "exceptions": 1,
+      "value_usd": 90563.48,
+      "vendor_name": "Juniper Contracting LLC",
+      "vendor_category": "Subcontractor",
+      "risk_tier": "Medium"
+    },
+    {
+      "vendor_id": "V1032",
+      "exceptions": 4,
+      "value_usd": 83008.15,
+      "vendor_name": "Cedarline Corporate Travel",
+      "vendor_category": "Travel",
+      "risk_tier": "Medium"
+    },
+    {
+      "vendor_id": "V1044",
+      "exceptions": 1,
+      "value_usd": 78422.24,
+      "vendor_name": "Underhill Utilities Co",
+      "vendor_category": "Facilities",
+      "risk_tier": "Low"
+    },
+    {
+      "vendor_id": "V1041",
+      "exceptions": 5,
+      "value_usd": 75416.33,
+      "vendor_name": "Northgate Field Services",
+      "vendor_category": "Subcontractor",
+      "risk_tier": "Medium"
+    },
+    {
+      "vendor_id": "V1051",
+      "exceptions": 3,
+      "value_usd": 73009.47,
+      "vendor_name": "Apex Utilities Co",
+      "vendor_category": "Facilities",
+      "risk_tier": "High"
+    },
+    {
+      "vendor_id": "V1012",
+      "exceptions": 3,
+      "value_usd": 72517.47,
+      "vendor_name": "Waterford Freight Lines",
+      "vendor_category": "Logistics",
+      "risk_tier": "High"
+    }
+  ],
+  "scorecard": [
+    {
+      "control_id": "C-01",
+      "control_name": "Duplicate invoice detection",
+      "exception_type": "DUPLICATE_INVOICE",
+      "seeded": 16.0,
+      "detected": 16,
+      "true_positives": 15.0,
+      "false_negatives": 1.0,
+      "corroborating_detections": 1.0,
+      "false_positives": 0.0,
+      "recall_pct": 93.8,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-02",
+      "control_name": "Duplicate payment detection",
+      "exception_type": "DUPLICATE_PAYMENT",
+      "seeded": 12.0,
+      "detected": 15,
+      "true_positives": 12.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 3.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-03",
+      "control_name": "Unapplied cash / payment without invoice",
+      "exception_type": "UNAPPLIED_PAYMENT",
+      "seeded": 14.0,
+      "detected": 14,
+      "true_positives": 14.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-04",
+      "control_name": "AP sub-ledger to GL completeness",
+      "exception_type": "MISSING_GL_POSTING",
+      "seeded": 13.0,
+      "detected": 13,
+      "true_positives": 13.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-05",
+      "control_name": "Payment to invoice amount agreement",
+      "exception_type": "PAYMENT_AMOUNT_MISMATCH",
+      "seeded": 20.0,
+      "detected": 20,
+      "true_positives": 20.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-06",
+      "control_name": "Bank statement to GL cash reconciliation",
+      "exception_type": "BANK_ITEM_NOT_IN_GL",
+      "seeded": 6.0,
+      "detected": 6,
+      "true_positives": 6.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-06",
+      "control_name": "Bank statement to GL cash reconciliation",
+      "exception_type": "GL_CASH_NOT_ON_STATEMENT",
+      "seeded": 9.0,
+      "detected": 9,
+      "true_positives": 9.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-07",
+      "control_name": "Journal entry debit/credit balance",
+      "exception_type": "UNBALANCED_JOURNAL",
+      "seeded": 7.0,
+      "detected": 7,
+      "true_positives": 7.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-08",
+      "control_name": "Segregation of duties on manual journals",
+      "exception_type": "SOD_VIOLATION",
+      "seeded": 10.0,
+      "detected": 10,
+      "true_positives": 10.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-09",
+      "control_name": "FX translation rate accuracy",
+      "exception_type": "FX_RATE_ERROR",
+      "seeded": 9.0,
+      "detected": 9,
+      "true_positives": 9.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-10",
+      "control_name": "Topside entries to AP control account",
+      "exception_type": "TOPSIDE_AP_ENTRY",
+      "seeded": 5.0,
+      "detected": 5,
+      "true_positives": 5.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-12",
+      "control_name": "Vendor master duplicate detection",
+      "exception_type": "DUPLICATE_VENDOR_MASTER",
+      "seeded": 4.0,
+      "detected": 4,
+      "true_positives": 4.0,
+      "false_negatives": 0.0,
+      "corroborating_detections": 0.0,
+      "false_positives": 0.0,
+      "recall_pct": 100.0,
+      "pair_recall_pct": 100.0,
+      "precision_pct": 100.0,
+      "note": ""
+    },
+    {
+      "control_id": "C-11",
+      "control_name": "AP control account tie-out (GL vs sub-ledger)",
+      "exception_type": "GL_SUBLEDGER_VARIANCE",
+      "seeded": NaN,
+      "detected": 3,
+      "true_positives": NaN,
+      "false_negatives": NaN,
+      "corroborating_detections": NaN,
+      "false_positives": NaN,
+      "recall_pct": NaN,
+      "pair_recall_pct": NaN,
+      "precision_pct": NaN,
+      "note": "Derived tie-out - no seeded population"
+    },
+    {
+      "control_id": "C-13",
+      "control_name": "Aged open payable review",
+      "exception_type": "AGED_OPEN_ITEM",
+      "seeded": NaN,
+      "detected": 29,
+      "true_positives": NaN,
+      "false_negatives": NaN,
+      "corroborating_detections": NaN,
+      "false_positives": NaN,
+      "recall_pct": NaN,
+      "pair_recall_pct": NaN,
+      "precision_pct": NaN,
+      "note": "Operational aging review - no seeded population"
+    }
+  ],
+  "largest_exceptions": [
+    {
+      "exception_id": "EXC-00118",
+      "control_id": "C-10",
+      "exception_type": "TOPSIDE_AP_ENTRY",
+      "severity": "Critical",
+      "entity": "US01",
+      "vendor_id": "",
+      "exception_amount_usd": 377077.07,
+      "exception_status": "In Review",
+      "evidence": "JE-2026-003436 moved the AP control account by USD 377,077.07 with no sub-ledger document (ebeaumont / lferraro) - 'Topside close adjustment to AP control - no sub-ledger support'"
+    },
+    {
+      "exception_id": "EXC-00047",
+      "control_id": "C-06",
+      "exception_type": "GL_CASH_NOT_ON_STATEMENT",
+      "severity": "Critical",
+      "entity": "CA01",
+      "vendor_id": "V1006",
+      "exception_amount_usd": 320546.38,
+      "exception_status": "Resolved",
+      "evidence": "PAY-500428 (ACH-7004802) credited cash USD 320,546.38 on 2026-04-16 - uncleared 167 days at the statement cut-off"
+    },
+    {
+      "exception_id": "EXC-00145",
+      "control_id": "C-02",
+      "exception_type": "DUPLICATE_PAYMENT",
+      "severity": "Critical",
+      "entity": "US01",
+      "vendor_id": "V1043",
+      "exception_amount_usd": 318848.11,
+      "exception_status": "Open",
+      "evidence": "PAY-501582 (ACH-7271492) pays INV-100565 again - already settled by PAY-501344 on 2026-09-11"
+    },
+    {
+      "exception_id": "EXC-00018",
+      "control_id": "C-10",
+      "exception_type": "TOPSIDE_AP_ENTRY",
+      "severity": "Critical",
+      "entity": "UK01",
+      "vendor_id": "",
+      "exception_amount_usd": 311352.35,
+      "exception_status": "Resolved",
+      "evidence": "JE-2026-003434 moved the AP control account by USD 311,352.35 with no sub-ledger document (hkowalski / lferraro) - 'Topside close adjustment to AP control - no sub-ledger support'"
+    },
+    {
+      "exception_id": "EXC-00065",
+      "control_id": "C-10",
+      "exception_type": "TOPSIDE_AP_ENTRY",
+      "severity": "Critical",
+      "entity": "US01",
+      "vendor_id": "",
+      "exception_amount_usd": 298648.17,
+      "exception_status": "Open",
+      "evidence": "JE-2026-003438 moved the AP control account by USD 298,648.17 with no sub-ledger document (ebeaumont / ahassan) - 'Topside close adjustment to AP control - no sub-ledger support'"
+    },
+    {
+      "exception_id": "EXC-00160",
+      "control_id": "C-11",
+      "exception_type": "GL_SUBLEDGER_VARIANCE",
+      "severity": "Critical",
+      "entity": "US01",
+      "vendor_id": "",
+      "exception_amount_usd": 274039.75,
+      "exception_status": "Open",
+      "evidence": "US01: GL AP control USD 1,360,826.05 vs sub-ledger open USD 1,086,786.30, variance USD 274,039.75. Decomposed: missing GL postings -143,893.40, FX posting errors 3,447.93, topside entries 414,924.35, FX on settlement -439.12, unexplained -0.01"
+    },
+    {
+      "exception_id": "EXC-00057",
+      "control_id": "C-10",
+      "exception_type": "TOPSIDE_AP_ENTRY",
+      "severity": "Critical",
+      "entity": "US01",
+      "vendor_id": "",
+      "exception_amount_usd": 260800.89,
+      "exception_status": "Open",
+      "evidence": "JE-2026-003437 moved the AP control account by USD -260,800.89 with no sub-ledger document (nsalvatore / kwhitfield) - 'Topside close adjustment to AP control - no sub-ledger support'"
+    },
+    {
+      "exception_id": "EXC-00058",
+      "control_id": "C-08",
+      "exception_type": "SOD_VIOLATION",
+      "severity": "Critical",
+      "entity": "CA01",
+      "vendor_id": "",
+      "exception_amount_usd": 239909.6,
+      "exception_status": "Resolved",
+      "evidence": "JE-2026-003426 (Manual) posting USD 239,909.60 was prepared and approved by the same user (pvargas) - 'Reclass entry - prepared and approved by same user'"
+    },
+    {
+      "exception_id": "EXC-00110",
+      "control_id": "C-08",
+      "exception_type": "SOD_VIOLATION",
+      "severity": "Critical",
+      "entity": "US01",
+      "vendor_id": "",
+      "exception_amount_usd": 202083.59,
+      "exception_status": "Resolved",
+      "evidence": "JE-2026-003428 (Manual) posting USD 202,083.59 was prepared and approved by the same user (ebeaumont) - 'Reclass entry - prepared and approved by same user'"
+    },
+    {
+      "exception_id": "EXC-00060",
+      "control_id": "C-02",
+      "exception_type": "DUPLICATE_PAYMENT",
+      "severity": "Critical",
+      "entity": "UK01",
+      "vendor_id": "V1001",
+      "exception_amount_usd": 198976.72,
+      "exception_status": "Resolved",
+      "evidence": "PAY-501581 (ACH-7662642) pays INV-101014 again - already settled by PAY-500588 on 2026-05-04"
+    },
+    {
+      "exception_id": "EXC-00133",
+      "control_id": "C-08",
+      "exception_type": "SOD_VIOLATION",
+      "severity": "Critical",
+      "entity": "CA01",
+      "vendor_id": "",
+      "exception_amount_usd": 188954.44,
+      "exception_status": "In Review",
+      "evidence": "JE-2026-003431 (Manual) posting USD 188,954.44 was prepared and approved by the same user (hkowalski) - 'Reclass entry - prepared and approved by same user'"
+    },
+    {
+      "exception_id": "EXC-00127",
+      "control_id": "C-08",
+      "exception_type": "SOD_VIOLATION",
+      "severity": "Critical",
+      "entity": "CA01",
+      "vendor_id": "",
+      "exception_amount_usd": 172315.64,
+      "exception_status": "In Review",
+      "evidence": "JE-2026-003424 (Manual) posting USD 172,315.64 was prepared and approved by the same user (pvargas) - 'Reclass entry - prepared and approved by same user'"
+    },
+    {
+      "exception_id": "EXC-00117",
+      "control_id": "C-08",
+      "exception_type": "SOD_VIOLATION",
+      "severity": "Critical",
+      "entity": "UK01",
+      "vendor_id": "",
+      "exception_amount_usd": 147549.9,
+      "exception_status": "Resolved",
+      "evidence": "JE-2026-003425 (Manual) posting USD 147,549.90 was prepared and approved by the same user (nsalvatore) - 'Reclass entry - prepared and approved by same user'"
+    },
+    {
+      "exception_id": "EXC-00078",
+      "control_id": "C-08",
+      "exception_type": "SOD_VIOLATION",
+      "severity": "Critical",
+      "entity": "US01",
+      "vendor_id": "",
+      "exception_amount_usd": 138641.5,
+      "exception_status": "In Review",
+      "evidence": "JE-2026-003427 (Manual) posting USD 138,641.50 was prepared and approved by the same user (hkowalski) - 'Reclass entry - prepared and approved by same user'"
+    },
+    {
+      "exception_id": "EXC-00059",
+      "control_id": "C-10",
+      "exception_type": "TOPSIDE_AP_ENTRY",
+      "severity": "Critical",
+      "entity": "UK01",
+      "vendor_id": "",
+      "exception_amount_usd": 120545.18,
+      "exception_status": "Resolved",
+      "evidence": "JE-2026-003435 moved the AP control account by USD -120,545.18 with no sub-ledger document (pvargas / ahassan) - 'Topside close adjustment to AP control - no sub-ledger support'"
+    }
+  ]
+}

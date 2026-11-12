@@ -1,0 +1,14 @@
+control_id,control_name,assigned_queue,control_family,seeded_defects,recall_pct,precision_pct
+C-01,Duplicate invoice detection,AP Operations,Duplicate prevention,16.0,93.8,100.0
+C-02,Duplicate payment detection,AP Operations,Duplicate prevention,12.0,100.0,100.0
+C-03,Unapplied cash / payment without invoice,AP Operations,Cash application,14.0,100.0,100.0
+C-04,AP sub-ledger to GL completeness,GL & Close Team,Completeness,13.0,100.0,100.0
+C-05,Payment to invoice amount agreement,AP Operations,Accuracy,20.0,100.0,100.0
+C-06,Bank statement to GL cash reconciliation,Treasury & Cash Operations,Cash and bank,15.0,100.0,100.0
+C-07,Journal entry debit/credit balance,GL & Close Team,Accuracy,7.0,100.0,100.0
+C-08,Segregation of duties on manual journals,Controllership Review,Authorisation,10.0,100.0,100.0
+C-09,FX translation rate accuracy,GL & Close Team,Accuracy,9.0,100.0,100.0
+C-10,Topside entries to AP control account,Controllership Review,Authorisation,5.0,100.0,100.0
+C-11,AP control account tie-out (GL vs sub-ledger),GL & Close Team,Completeness,0.0,,
+C-12,Vendor master duplicate detection,Vendor Master Data,Duplicate prevention,4.0,100.0,100.0
+C-13,Aged open payable review,AP Operations,Working capital,0.0,,

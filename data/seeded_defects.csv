@@ -1,0 +1,126 @@
+defect_id,control_id,defect_type,key_type,key,related_key,amount_usd,entity,injected_date,description
+SD-0001,C-01,DUPLICATE_INVOICE,invoice_id,INV-90000,INV-100751,3677.14,US01,2026-10-05,Re-keyed duplicate of INV-100751 (1017-95543 -> 101795543)
+SD-0002,C-01,DUPLICATE_INVOICE,invoice_id,INV-90001,INV-101291,28.51,UK01,2026-07-06,Re-keyed duplicate of INV-101291 (1038-19901 -> 01038-19901)
+SD-0003,C-01,DUPLICATE_INVOICE,invoice_id,INV-90002,INV-101602,18823.68,UK01,2026-01-19,Re-keyed duplicate of INV-101602 (1003-76581 ->  1003-76581 )
+SD-0004,C-01,DUPLICATE_INVOICE,invoice_id,INV-90003,INV-100578,3256.49,US01,2026-09-09,Re-keyed duplicate of INV-100578 (1007-82385 -> 1007-82385)
+SD-0005,C-01,DUPLICATE_INVOICE,invoice_id,INV-90004,INV-100780,1716.02,UK01,2026-04-03,Re-keyed duplicate of INV-100780 (1011-38550 -> 1011-38550-A)
+SD-0006,C-01,DUPLICATE_INVOICE,invoice_id,INV-90005,INV-100624,4113.84,US01,2026-03-10,Re-keyed duplicate of INV-100624 (1033-33331 -> 103333331)
+SD-0007,C-01,DUPLICATE_INVOICE,invoice_id,INV-90006,INV-101770,4062.7,UK01,2026-06-22,Re-keyed duplicate of INV-101770 (1003-31480 -> 01003-31480)
+SD-0008,C-01,DUPLICATE_INVOICE,invoice_id,INV-90007,INV-100814,308.92,US01,2026-07-09,Re-keyed duplicate of INV-100814 (1009-76659 ->  1009-76659 )
+SD-0009,C-01,DUPLICATE_INVOICE,invoice_id,INV-90008,INV-100255,31872.65,CA01,2026-02-16,Re-keyed duplicate of INV-100255 (1017-74273 -> 1017-74273)
+SD-0010,C-01,DUPLICATE_INVOICE,invoice_id,INV-90009,INV-101298,1016.28,US01,2026-09-07,Re-keyed duplicate of INV-101298 (1052-39730 -> 1052-39730-A)
+SD-0011,C-01,DUPLICATE_INVOICE,invoice_id,INV-90010,INV-100976,68017.96,US01,2026-06-17,Re-keyed duplicate of INV-100976 (1014-40757 -> 101440757)
+SD-0012,C-01,DUPLICATE_INVOICE,invoice_id,INV-90011,INV-100677,2733.58,UK01,2026-03-09,Re-keyed duplicate of INV-100677 (1007-14728 -> 01007-14728)
+SD-0013,C-01,DUPLICATE_INVOICE,invoice_id,INV-90012,INV-101249,65222.89,US01,2026-07-01,Re-keyed duplicate of INV-101249 (1029-70440 ->  1029-70440 )
+SD-0014,C-01,DUPLICATE_INVOICE,invoice_id,INV-90013,INV-101603,12390.74,US01,2026-06-29,Re-keyed duplicate of INV-101603 (1041-41660 -> 1041-41660)
+SD-0015,C-01,DUPLICATE_INVOICE,invoice_id,INV-90014,INV-100452,22402.99,CA01,2026-06-05,Re-keyed duplicate of INV-100452 (1040-87874 -> 1040-87874-A)
+SD-0016,C-01,DUPLICATE_INVOICE,invoice_id,INV-90015,INV-100404,10241.45,US01,2026-03-18,Re-keyed duplicate of INV-100404 (1053-91443 -> 105391443)
+SD-0017,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501575,PAY-501255,17191.43,US01,2026-08-28,Second payment against INV-101651 already settled by PAY-501255
+SD-0018,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501576,PAY-500646,4959.35,US01,2026-06-15,Second payment against INV-100498 already settled by PAY-500646
+SD-0019,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501577,PAY-501273,20127.9,US01,2026-08-24,Second payment against INV-101192 already settled by PAY-501273
+SD-0020,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501578,PAY-500648,518.57,CA01,2026-05-13,Second payment against INV-100925 already settled by PAY-500648
+SD-0021,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501579,PAY-501368,2620.05,US01,2026-09-28,Second payment against INV-101751 already settled by PAY-501368
+SD-0022,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501580,PAY-500383,3700.9,US01,2026-06-01,Second payment against INV-101273 already settled by PAY-500383
+SD-0023,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501581,PAY-500588,198976.72,UK01,2026-05-12,Second payment against INV-101014 already settled by PAY-500588
+SD-0024,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501582,PAY-501344,318848.11,US01,2026-09-21,Second payment against INV-100565 already settled by PAY-501344
+SD-0025,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501583,PAY-501322,3873.63,UK01,2026-08-24,Second payment against INV-101776 already settled by PAY-501322
+SD-0026,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501584,PAY-501321,606.92,CA01,2026-09-07,Second payment against INV-101764 already settled by PAY-501321
+SD-0027,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501585,PAY-500227,90563.48,CA01,2026-03-02,Second payment against INV-101320 already settled by PAY-500227
+SD-0028,C-02,DUPLICATE_PAYMENT,payment_id,PAY-501586,PAY-500377,21.93,UK01,2026-04-23,Second payment against INV-100851 already settled by PAY-500377
+SD-0029,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501587,,71329.09,CA01,2026-06-01,Disbursement posted to suspense with no invoice reference
+SD-0030,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501588,,25066.79,UK01,2026-02-04,Disbursement posted to suspense with no invoice reference
+SD-0031,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501589,,53150.08,CA01,2026-07-20,Disbursement posted to suspense with no invoice reference
+SD-0032,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501590,,50219.94,US01,2026-08-10,Disbursement posted to suspense with no invoice reference
+SD-0033,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501591,,55022.8,US01,2026-07-17,Disbursement posted to suspense with no invoice reference
+SD-0034,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501592,,24824.12,US01,2026-03-09,Disbursement posted to suspense with no invoice reference
+SD-0035,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501593,,38311.77,CA01,2026-09-07,Disbursement posted to suspense with no invoice reference
+SD-0036,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501594,,35610.32,UK01,2026-04-10,Disbursement posted to suspense with no invoice reference
+SD-0037,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501595,,48370.78,CA01,2026-02-02,Disbursement posted to suspense with no invoice reference
+SD-0038,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501596,,61449.13,CA01,2026-06-24,Disbursement posted to suspense with no invoice reference
+SD-0039,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501597,,62767.84,US01,2026-07-27,Disbursement posted to suspense with no invoice reference
+SD-0040,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501598,,32676.12,UK01,2026-03-09,Disbursement posted to suspense with no invoice reference
+SD-0041,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501599,,43112.05,UK01,2026-06-12,Disbursement posted to suspense with no invoice reference
+SD-0042,C-03,UNAPPLIED_PAYMENT,payment_id,PAY-501600,,4326.71,CA01,2026-03-11,Disbursement posted to suspense with no invoice reference
+SD-0043,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500004,INV-100127,7688.93,CA01,2026-02-13,"Overpayment of 7,688.93 USD vs invoice INV-100127"
+SD-0044,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-501116,INV-101035,372.9,UK01,2026-07-27,Short payment of 372.90 USD vs invoice INV-101035
+SD-0045,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500799,INV-101577,562.58,UK01,2026-05-28,Short payment of 562.58 USD vs invoice INV-101577
+SD-0046,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500754,INV-100736,929.12,US01,2026-06-19,Overpayment of 929.12 USD vs invoice INV-100736
+SD-0047,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-501234,INV-101359,3.16,CA01,2026-08-19,Short payment of 3.16 USD vs invoice INV-101359
+SD-0048,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500389,INV-100677,351.76,UK01,2026-03-31,Short payment of 351.76 USD vs invoice INV-100677
+SD-0049,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-501198,INV-100709,125.55,US01,2026-09-15,Overpayment of 125.55 USD vs invoice INV-100709
+SD-0050,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500473,INV-101551,428.07,UK01,2026-03-30,Short payment of 428.07 USD vs invoice INV-101551
+SD-0051,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-501176,INV-100014,85.32,UK01,2026-08-11,Short payment of 85.32 USD vs invoice INV-100014
+SD-0052,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500873,INV-101024,76.02,US01,2026-06-15,Overpayment of 76.02 USD vs invoice INV-101024
+SD-0053,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500376,INV-100614,117.64,UK01,2026-03-23,Short payment of 117.64 USD vs invoice INV-100614
+SD-0054,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500573,INV-100425,272.91,UK01,2026-04-10,Short payment of 272.91 USD vs invoice INV-100425
+SD-0055,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500440,INV-100041,1200.15,US01,2026-04-28,"Overpayment of 1,200.15 USD vs invoice INV-100041"
+SD-0056,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500764,INV-100669,35.89,UK01,2026-06-02,Short payment of 35.89 USD vs invoice INV-100669
+SD-0057,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-501407,INV-101070,423.06,CA01,2026-09-21,Short payment of 423.06 USD vs invoice INV-101070
+SD-0058,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500530,INV-100327,458.34,CA01,2026-04-09,Overpayment of 458.34 USD vs invoice INV-100327
+SD-0059,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500670,INV-100809,2474.76,US01,2026-05-18,"Short payment of 2,474.76 USD vs invoice INV-100809"
+SD-0060,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-501568,INV-90005,645.78,US01,2026-04-13,Short payment of 645.78 USD vs invoice INV-90005
+SD-0061,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-500548,INV-100464,1065.2,CA01,2026-05-06,"Overpayment of 1,065.20 USD vs invoice INV-100464"
+SD-0062,C-05,PAYMENT_AMOUNT_MISMATCH,payment_id,PAY-501032,INV-100278,18965.05,US01,2026-07-10,"Short payment of 18,965.05 USD vs invoice INV-100278"
+SD-0063,C-04,MISSING_GL_POSTING,invoice_id,INV-100323,,2302.85,CA01,2026-02-27,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0064,C-04,MISSING_GL_POSTING,invoice_id,INV-101452,,26578.2,US01,2026-08-31,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0065,C-04,MISSING_GL_POSTING,invoice_id,INV-101556,,55023.16,UK01,2026-09-18,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0066,C-04,MISSING_GL_POSTING,invoice_id,INV-101704,,3169.35,US01,2026-09-29,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0067,C-04,MISSING_GL_POSTING,invoice_id,INV-101762,,2415.15,US01,2026-09-08,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0068,C-04,MISSING_GL_POSTING,invoice_id,INV-101537,,78422.24,US01,2026-09-25,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0069,C-04,MISSING_GL_POSTING,invoice_id,INV-101290,,92739.0,UK01,2026-08-05,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0070,C-04,MISSING_GL_POSTING,invoice_id,INV-101439,,2983.92,US01,2026-08-03,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0071,C-04,MISSING_GL_POSTING,invoice_id,INV-101731,,993.09,US01,2026-08-06,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0072,C-04,MISSING_GL_POSTING,invoice_id,INV-101767,,13820.17,US01,2026-09-07,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0073,C-04,MISSING_GL_POSTING,invoice_id,INV-100091,,1069.03,US01,2026-09-16,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0074,C-04,MISSING_GL_POSTING,invoice_id,INV-100500,,569.13,UK01,2026-08-11,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0075,C-04,MISSING_GL_POSTING,invoice_id,INV-100598,,14442.26,US01,2026-09-23,AP sub-ledger invoice with no corresponding GL accrual entry
+SD-0076,C-09,FX_RATE_ERROR,invoice_id,INV-100080,,4577.42,UK01,2026-01-16,"CAD accrual translated at 0.68 vs published 0.733468 - USD impact 4,577.42"
+SD-0077,C-09,FX_RATE_ERROR,invoice_id,INV-101650,,291.78,US01,2026-06-10,EUR accrual translated at 0.98 vs published 1.056009 - USD impact 291.78
+SD-0078,C-09,FX_RATE_ERROR,invoice_id,INV-101226,,306.57,UK01,2026-06-02,GBP accrual translated at 1.13 vs published 1.253698 - USD impact 306.57
+SD-0079,C-09,FX_RATE_ERROR,invoice_id,INV-100612,,1388.62,US01,2026-04-27,"EUR accrual translated at 1.19 vs published 1.066378 - USD impact 1,388.62"
+SD-0080,C-09,FX_RATE_ERROR,invoice_id,INV-100363,,32.47,US01,2026-06-05,INR accrual translated at 0.01 vs published 0.011752 - USD impact 32.47
+SD-0081,C-09,FX_RATE_ERROR,invoice_id,INV-100353,,920.5,UK01,2026-04-09,GBP accrual translated at 1.39 vs published 1.298086 - USD impact 920.50
+SD-0082,C-09,FX_RATE_ERROR,invoice_id,INV-100291,,44.56,UK01,2026-02-25,EUR accrual translated at 1.0 vs published 1.105576 - USD impact 44.56
+SD-0083,C-09,FX_RATE_ERROR,invoice_id,INV-100426,,119.37,CA01,2026-09-28,INR accrual translated at 0.01 vs published 0.01183 - USD impact 119.37
+SD-0084,C-09,FX_RATE_ERROR,invoice_id,INV-100882,,2383.54,US01,2026-09-25,"GBP accrual translated at 1.34 vs published 1.24922 - USD impact 2,383.54"
+SD-0085,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-500516,,9477.55,US01,2026-04-09,GL cash disbursement with no matching bank statement line
+SD-0086,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-500428,,320546.38,CA01,2026-04-16,GL cash disbursement with no matching bank statement line
+SD-0087,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-501495,,42573.39,CA01,2026-09-22,GL cash disbursement with no matching bank statement line
+SD-0088,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-500729,,4676.35,CA01,2026-06-29,GL cash disbursement with no matching bank statement line
+SD-0089,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-500335,,430.45,UK01,2026-03-31,GL cash disbursement with no matching bank statement line
+SD-0090,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-501347,,3664.31,US01,2026-09-21,GL cash disbursement with no matching bank statement line
+SD-0091,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-500618,,6783.96,UK01,2026-06-23,GL cash disbursement with no matching bank statement line
+SD-0092,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-500497,,739.19,UK01,2026-03-31,GL cash disbursement with no matching bank statement line
+SD-0093,C-06,GL_CASH_NOT_ON_STATEMENT,payment_id,PAY-500103,,14576.37,US01,2026-03-02,GL cash disbursement with no matching bank statement line
+SD-0094,C-06,BANK_ITEM_NOT_IN_GL,bank_reference,BNK-4683502,,981.64,CA01,2026-04-27,Bank Fee on statement with no GL entry: Monthly account analysis fee
+SD-0095,C-06,BANK_ITEM_NOT_IN_GL,bank_reference,BNK-4426755,,1944.48,CA01,2026-07-17,FX Charge on statement with no GL entry: Cross-border wire FX margin
+SD-0096,C-06,BANK_ITEM_NOT_IN_GL,bank_reference,BNK-4541047,,28232.65,UK01,2026-06-08,Returned Item on statement with no GL entry: Returned ACH - vendor account closed
+SD-0097,C-06,BANK_ITEM_NOT_IN_GL,bank_reference,BNK-4240546,,3681.0,CA01,2026-09-08,Bank Fee on statement with no GL entry: Wire transfer fee
+SD-0098,C-06,BANK_ITEM_NOT_IN_GL,bank_reference,BNK-4358290,,358.93,CA01,2026-09-04,Interest on statement with no GL entry: Interest credit on operating balance
+SD-0099,C-06,BANK_ITEM_NOT_IN_GL,bank_reference,BNK-4198741,,3350.22,UK01,2026-05-22,Adjustment on statement with no GL entry: Unidentified statement adjustment
+SD-0100,C-07,UNBALANCED_JOURNAL,je_id,JE-2026-003417,,5908.9,CA01,2026-07-22,"Manual JE out of balance by 5,908.90 USD"
+SD-0101,C-07,UNBALANCED_JOURNAL,je_id,JE-2026-003418,,11721.54,UK01,2026-07-06,"Manual JE out of balance by 11,721.54 USD"
+SD-0102,C-07,UNBALANCED_JOURNAL,je_id,JE-2026-003419,,7128.98,CA01,2026-07-07,"Manual JE out of balance by 7,128.98 USD"
+SD-0103,C-07,UNBALANCED_JOURNAL,je_id,JE-2026-003420,,7861.52,UK01,2026-02-16,"Manual JE out of balance by 7,861.52 USD"
+SD-0104,C-07,UNBALANCED_JOURNAL,je_id,JE-2026-003421,,1379.93,UK01,2026-08-19,"Manual JE out of balance by 1,379.93 USD"
+SD-0105,C-07,UNBALANCED_JOURNAL,je_id,JE-2026-003422,,6735.55,UK01,2026-09-07,"Manual JE out of balance by 6,735.55 USD"
+SD-0106,C-07,UNBALANCED_JOURNAL,je_id,JE-2026-003423,,3494.79,UK01,2026-07-01,"Manual JE out of balance by 3,494.79 USD"
+SD-0107,C-08,SOD_VIOLATION,je_id,JE-2026-003424,,172315.64,CA01,2026-08-21,Manual JE prepared and approved by the same user (pvargas)
+SD-0108,C-08,SOD_VIOLATION,je_id,JE-2026-003425,,147549.9,UK01,2026-07-28,Manual JE prepared and approved by the same user (nsalvatore)
+SD-0109,C-08,SOD_VIOLATION,je_id,JE-2026-003426,,239909.6,CA01,2026-05-11,Manual JE prepared and approved by the same user (pvargas)
+SD-0110,C-08,SOD_VIOLATION,je_id,JE-2026-003427,,138641.5,US01,2026-06-08,Manual JE prepared and approved by the same user (hkowalski)
+SD-0111,C-08,SOD_VIOLATION,je_id,JE-2026-003428,,202083.59,US01,2026-07-13,Manual JE prepared and approved by the same user (ebeaumont)
+SD-0112,C-08,SOD_VIOLATION,je_id,JE-2026-003429,,96571.11,UK01,2026-06-29,Manual JE prepared and approved by the same user (hkowalski)
+SD-0113,C-08,SOD_VIOLATION,je_id,JE-2026-003430,,88249.18,US01,2026-09-29,Manual JE prepared and approved by the same user (pvargas)
+SD-0114,C-08,SOD_VIOLATION,je_id,JE-2026-003431,,188954.44,CA01,2026-09-04,Manual JE prepared and approved by the same user (hkowalski)
+SD-0115,C-08,SOD_VIOLATION,je_id,JE-2026-003432,,80618.66,US01,2026-04-08,Manual JE prepared and approved by the same user (pvargas)
+SD-0116,C-08,SOD_VIOLATION,je_id,JE-2026-003433,,67954.08,UK01,2026-09-25,Manual JE prepared and approved by the same user (ebeaumont)
+SD-0117,C-10,TOPSIDE_AP_ENTRY,je_id,JE-2026-003434,,311352.35,UK01,2026-03-03,Manual entry to AP control account with no sub-ledger document
+SD-0118,C-10,TOPSIDE_AP_ENTRY,je_id,JE-2026-003435,,120545.18,UK01,2026-05-11,Manual entry to AP control account with no sub-ledger document
+SD-0119,C-10,TOPSIDE_AP_ENTRY,je_id,JE-2026-003436,,377077.07,US01,2026-07-28,Manual entry to AP control account with no sub-ledger document
+SD-0120,C-10,TOPSIDE_AP_ENTRY,je_id,JE-2026-003437,,260800.89,US01,2026-05-06,Manual entry to AP control account with no sub-ledger document
+SD-0121,C-10,TOPSIDE_AP_ENTRY,je_id,JE-2026-003438,,298648.17,US01,2026-05-19,Manual entry to AP control account with no sub-ledger document
+SD-0122,C-12,DUPLICATE_VENDOR_MASTER,vendor_id,V2100,V1021,0.0,ALL,2026-03-18,"Vendor master duplicate of V1021 - shared bank account 3795, name variant 'Norwood Systems, Inc.'"
+SD-0123,C-12,DUPLICATE_VENDOR_MASTER,vendor_id,V2101,V1001,0.0,ALL,2026-06-11,"Vendor master duplicate of V1001 - shared bank account 9772, name variant 'QUARRY HILL ADVISORY LLP'"
+SD-0124,C-12,DUPLICATE_VENDOR_MASTER,vendor_id,V2102,V1022,0.0,ALL,2026-02-01,"Vendor master duplicate of V1022 - shared bank account 8272, name variant 'Rosemont Consulting Group (DBA)'"
+SD-0125,C-12,DUPLICATE_VENDOR_MASTER,vendor_id,V2103,V1011,0.0,ALL,2026-05-26,"Vendor master duplicate of V1011 - shared bank account 9506, name variant 'Hollis  Corporate  Travel'"

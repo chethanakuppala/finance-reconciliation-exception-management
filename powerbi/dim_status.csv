@@ -1,0 +1,4 @@
+exception_status,status_sort,is_open
+Open,1,True
+In Review,2,True
+Resolved,3,False

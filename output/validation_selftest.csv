@@ -1,0 +1,18 @@
+expected_check,scenario,checks_fired,blocking,advisory,result,detail
+V-01,required field removed,V-01,V-01,,pass,V-01 missing or mistyped field: control_gap
+V-01,confidence sent as a string,V-01,V-01,,pass,V-01 missing or mistyped field: confidence
+V-02,action outside the closed list,"V-02,V-07,V-09","V-02,V-07",V-09,pass,V-02 action not in the closed list: Ask the vendor nicely; V-07 'Ask the vendor nicely' is not a permitted action for DUPLICATE_PAYMENT; V-09 action differs fro
+V-02,repeat_risk outside the closed list,V-02,V-02,,pass,V-02 repeat_risk not in the closed list: Severe
+V-03,confidence out of bounds,V-03,V-03,,pass,V-03 confidence out of bounds: 1.8
+V-03,confidence below the floor,V-03,,V-03,pass,V-03 confidence 0.31 below the 0.55 floor - routed to a human
+V-04,amount that is not in the evidence pack,V-04,V-04,,pass,"V-04 figures not traceable to the evidence pack: 482,119.00"
+V-05,document ID that does not exist,"V-04,V-05","V-04,V-05",,pass,"V-04 figures not traceable to the evidence pack: -999,999.00, -888,888.00; V-05 identifiers not in the evidence pack: INV-999999, PAY-888888"
+V-06,human review dropped on a material item,V-06,,V-06,pass,V-06 human review forced by materiality or severity
+V-07,action not permitted for this exception type,"V-07,V-09",V-07,V-09,pass,V-07 'Merge vendor master records' is not a permitted action for DUPLICATE_PAYMENT; V-09 action differs from baseline ('Merge vendor master records' vs 'Escalat
+V-07,write-off above the ceiling,"V-07,V-09",V-07,V-09,pass,"V-07 'Write off below threshold' is not a permitted action for DUPLICATE_PAYMENT; V-07 write-off proposed on USD 318,848.11, above the 250.00 ceiling; V-09 acti"
+V-08,bank account value restated,"V-04,V-08","V-04,V-08",,pass,"V-04 figures not traceable to the evidence pack: 4,417.00; V-08 narrative restates a sensitive identifier value: 'account 4417'"
+V-08,tax ID value restated,"V-04,V-08","V-04,V-08",,pass,"V-04 figures not traceable to the evidence pack: -3,456,789.00; V-08 narrative restates a sensitive identifier value: '12-3456789'"
+V-09,recovery estimate above the exception value,V-09,V-09,,pass,"V-09 recovery estimate USD 956,544.33 exceeds the exception value"
+V-09,action diverges from the deterministic baseline,V-09,,V-09,pass,V-09 action differs from baseline ('Void and reissue payment' vs 'Escalate to controller')
+V-10,evidence pack hash is stable,,,,pass,3a005c53670e9f08 == 3a005c53670e9f08
+-,clean baseline analysis passes,,,,pass,

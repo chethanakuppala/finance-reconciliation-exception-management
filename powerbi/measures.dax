@@ -1,0 +1,381 @@
+// ======================================================================
+// measures.dax - measure library for the reconciliation exception model
+//
+// Paste each block into Power BI Desktop (Modeling > New measure), or add
+// them to a calculation group / Tabular Editor script. Display folders are
+// given in comments.
+//
+// Model prerequisites
+//   1. Set dim_date[date] to data type Date, then Mark as date table.
+//   2. Set the sort-by columns: dim_severity[severity] by [severity_sort],
+//      dim_status[exception_status] by [status_sort],
+//      dim_aging_bucket[aging_bucket] by [bucket_sort],
+//      dim_date[month_name] by [month_number], dim_date[period] by [period_sort].
+//   3. Create the relationships in relationships.csv. The two inactive date
+//      relationships on fact_exception (source_date_key, resolution_date_key)
+//      are required - the backlog and inflow measures activate them with
+//      USERELATIONSHIP.
+// ======================================================================
+
+
+// ---------------------------------------------------------------- 1. Population
+// Folder: 01 Population
+
+Invoice Count = COUNTROWS ( fact_invoice )
+
+Invoice Value =
+SUM ( fact_invoice[invoice_amount_usd] )
+
+Payment Count = COUNTROWS ( fact_payment )
+
+Payment Value =
+SUM ( fact_payment[payment_amount_usd] )
+
+GL Lines = COUNTROWS ( fact_gl )
+
+Vendors Transacted =
+DISTINCTCOUNT ( fact_invoice[vendor_id] )
+
+Open AP Balance =
+SUM ( fact_invoice[open_amount_usd] )
+
+Past Due Balance =
+CALCULATE ( [Open AP Balance], dim_aging_bucket[is_past_due] = TRUE () )
+
+Past Due % =
+DIVIDE ( [Past Due Balance], [Open AP Balance] )
+
+Aged Over 90 Balance =
+CALCULATE (
+    [Open AP Balance],
+    dim_aging_bucket[aging_bucket] IN { "91-180", "180+" }
+)
+
+Weighted Days Past Due =
+DIVIDE (
+    SUMX ( fact_invoice, fact_invoice[open_amount_usd] * fact_invoice[days_past_due] ),
+    [Open AP Balance]
+)
+
+
+// --------------------------------------------------------------- 2. Exceptions
+// Folder: 02 Exceptions
+
+Exception Count = COUNTROWS ( fact_exception )
+
+Exception Value =
+SUM ( fact_exception[exception_amount_usd] )
+
+Exception Rate % =
+DIVIDE ( [Exception Count], [Invoice Count] )
+
+Exception Value % of Spend =
+DIVIDE ( [Exception Value], [Invoice Value] )
+
+Open Exceptions =
+CALCULATE ( [Exception Count], fact_exception[is_open] = TRUE () )
+
+Open Exception Value =
+CALCULATE ( [Exception Value], fact_exception[is_open] = TRUE () )
+
+Resolved Exceptions =
+CALCULATE ( [Exception Count], fact_exception[exception_status] = "Resolved" )
+
+In Review Exceptions =
+CALCULATE ( [Exception Count], fact_exception[exception_status] = "In Review" )
+
+Clearance Rate % =
+DIVIDE ( [Resolved Exceptions], [Exception Count] )
+
+Critical Open =
+CALCULATE (
+    [Exception Count],
+    fact_exception[is_open] = TRUE (),
+    dim_severity[severity] = "Critical"
+)
+
+High or Critical Open =
+CALCULATE (
+    [Exception Count],
+    fact_exception[is_open] = TRUE (),
+    dim_severity[severity] IN { "Critical", "High" }
+)
+
+Largest Open Exception =
+CALCULATE (
+    MAX ( fact_exception[exception_amount_usd] ),
+    fact_exception[is_open] = TRUE ()
+)
+
+
+// ------------------------------------------------------------ 3. Cash exposure
+// Folder: 03 Cash exposure
+
+Cash at Risk =
+CALCULATE ( [Exception Value], fact_exception[cash_at_risk] = TRUE () )
+
+Open Cash at Risk =
+CALCULATE (
+    [Exception Value],
+    fact_exception[cash_at_risk] = TRUE (),
+    fact_exception[is_open] = TRUE ()
+)
+
+Recovered Amount =
+SUM ( fact_exception[recovered_amount_usd] )
+
+Recovery Rate % =
+DIVIDE ( [Recovered Amount], [Cash at Risk] )
+
+Duplicate Payment Exposure =
+CALCULATE (
+    [Exception Value],
+    fact_exception[exception_type] = "DUPLICATE_PAYMENT"
+)
+
+Unapplied Cash =
+CALCULATE (
+    [Exception Value],
+    fact_exception[exception_type] = "UNAPPLIED_PAYMENT"
+)
+
+
+// ------------------------------------------------------- 4. Operational / SLA
+// Folder: 04 Operations
+
+Avg Days to Resolve =
+AVERAGE ( fact_exception[days_to_resolve] )
+
+Median Days to Resolve =
+MEDIAN ( fact_exception[days_to_resolve] )
+
+Avg Open Age Days =
+CALCULATE ( AVERAGE ( fact_exception[age_days] ), fact_exception[is_open] = TRUE () )
+
+SLA Breaches =
+CALCULATE ( [Exception Count], fact_exception[sla_breached] = TRUE )
+
+SLA Breach % =
+DIVIDE ( [SLA Breaches], [Exception Count] )
+
+Within SLA % = 1 - [SLA Breach %]
+
+Open Past SLA =
+CALCULATE (
+    [Exception Count],
+    fact_exception[is_open] = TRUE (),
+    fact_exception[sla_breached] = TRUE
+)
+
+Exceptions Raised =                                 -- by transaction date
+CALCULATE (
+    [Exception Count],
+    USERELATIONSHIP ( fact_exception[source_date_key], dim_date[date_key] )
+)
+
+Exceptions Raised Value =
+CALCULATE (
+    [Exception Value],
+    USERELATIONSHIP ( fact_exception[source_date_key], dim_date[date_key] )
+)
+
+Exceptions Cleared =                                -- by resolution date
+CALCULATE (
+    [Exception Count],
+    USERELATIONSHIP ( fact_exception[resolution_date_key], dim_date[date_key] ),
+    NOT ISBLANK ( fact_exception[resolution_date_key] )
+)
+
+Raised To Date =
+CALCULATE (
+    [Exception Count],
+    FILTER ( ALL ( dim_date ), dim_date[date_key] <= MAX ( dim_date[date_key] ) ),
+    USERELATIONSHIP ( fact_exception[source_date_key], dim_date[date_key] )
+)
+
+Cleared To Date =
+CALCULATE (
+    [Exception Count],
+    FILTER ( ALL ( dim_date ), dim_date[date_key] <= MAX ( dim_date[date_key] ) ),
+    USERELATIONSHIP ( fact_exception[resolution_date_key], dim_date[date_key] ),
+    NOT ISBLANK ( fact_exception[resolution_date_key] )
+)
+
+Open Backlog = [Raised To Date] - [Cleared To Date]
+
+Exception Value PM =
+CALCULATE ( [Exception Value], DATEADD ( dim_date[date], -1, MONTH ) )
+
+Exception Value MoM % =
+VAR Prior = [Exception Value PM]
+RETURN
+    DIVIDE ( [Exception Value] - Prior, Prior )
+
+Exception Count 3M Avg =
+AVERAGEX (
+    DATESINPERIOD ( dim_date[date], MAX ( dim_date[date] ), -3, MONTH ),
+    [Exception Count]
+)
+
+
+// -------------------------------------------------------------- 5. AP tie-out
+// Folder: 05 Balance tie-out
+
+GL AP Control =
+SUM ( fact_ap_tieout[gl_ap_control_usd] )
+
+Sub-ledger AP Open =
+SUM ( fact_ap_tieout[subledger_ap_open_usd] )
+
+AP Tie-out Variance = [GL AP Control] - [Sub-ledger AP Open]
+
+AP Variance Absolute =
+SUMX ( fact_ap_tieout, ABS ( fact_ap_tieout[variance_usd] ) )
+
+Variance Explained =
+SUM ( fact_ap_tieout[explained_total_usd] )
+
+Unexplained Residual =
+SUM ( fact_ap_tieout[unexplained_residual_usd] )
+
+Variance Explained % =
+DIVIDE ( [Variance Explained], [AP Tie-out Variance] )
+
+Tie-out Status =
+VAR Threshold = 1000
+RETURN
+    IF (
+        ABS ( [AP Tie-out Variance] ) <= Threshold,
+        "Within threshold",
+        "Variance above threshold"
+    )
+
+Tie-out Entities in Breach =
+CALCULATE (
+    COUNTROWS ( fact_ap_tieout ),
+    FILTER ( fact_ap_tieout, ABS ( fact_ap_tieout[variance_usd] ) > 1000 )
+)
+
+
+// ----------------------------------------------------- 6. AI-assisted triage
+// Folder: 06 AI triage
+
+Analysed Exceptions = COUNTROWS ( fact_exception_analysis )
+
+Avg Confidence =
+AVERAGE ( fact_exception_analysis[confidence] )
+
+Validation Rejections =
+CALCULATE (
+    COUNTROWS ( fact_exception_analysis ),
+    fact_exception_analysis[validation_status] = "Rejected - baseline used"
+)
+
+Validation Pass Rate % =
+DIVIDE ( [Analysed Exceptions] - [Validation Rejections], [Analysed Exceptions] )
+
+Flagged on Review =
+CALCULATE (
+    COUNTROWS ( fact_exception_analysis ),
+    fact_exception_analysis[validation_status] = "Accepted with flags"
+)
+
+Human Review Required =
+CALCULATE (
+    COUNTROWS ( fact_exception_analysis ),
+    fact_exception_analysis[requires_human_review] = TRUE
+)
+
+Human Review % =
+DIVIDE ( [Human Review Required], [Analysed Exceptions] )
+
+Auto-routable % = 1 - [Human Review %]
+
+Expected Recovery =
+SUM ( fact_exception_analysis[recovery_expected_usd] )
+
+Reviewer Acceptance % =
+VAR Reviewed =
+    CALCULATE (
+        COUNTROWS ( fact_exception_analysis ),
+        fact_exception_analysis[reviewer_disposition]
+            IN { "Accepted", "Accepted with edits", "Overridden" }
+    )
+VAR Accepted =
+    CALCULATE (
+        COUNTROWS ( fact_exception_analysis ),
+        fact_exception_analysis[reviewer_disposition]
+            IN { "Accepted", "Accepted with edits" }
+    )
+RETURN
+    DIVIDE ( Accepted, Reviewed )
+
+Reviewer Override % =
+VAR Reviewed =
+    CALCULATE (
+        COUNTROWS ( fact_exception_analysis ),
+        fact_exception_analysis[reviewer_disposition]
+            IN { "Accepted", "Accepted with edits", "Overridden" }
+    )
+VAR Overridden =
+    CALCULATE (
+        COUNTROWS ( fact_exception_analysis ),
+        fact_exception_analysis[reviewer_disposition] = "Overridden"
+    )
+RETURN
+    DIVIDE ( Overridden, Reviewed )
+
+Manual Triage Hours Avoided =                       -- 25 minutes per exception
+DIVIDE ( [Analysed Exceptions] * 25, 60 )
+
+
+// ------------------------------------------------------ 7. Detection quality
+// Folder: 07 Control assurance
+
+Seeded Defects =
+SUM ( dim_control[seeded_defects] )
+
+Detection Recall % =
+DIVIDE (
+    SUMX ( dim_control, dim_control[seeded_defects] * dim_control[recall_pct] ),
+    SUM ( dim_control[seeded_defects] ) * 100
+)
+
+Detection Precision % =
+DIVIDE (
+    SUMX ( dim_control, dim_control[seeded_defects] * dim_control[precision_pct] ),
+    SUM ( dim_control[seeded_defects] ) * 100
+)
+
+Controls Run =
+DISTINCTCOUNT ( dim_control[control_id] )
+
+Self-Approved Journals =
+CALCULATE ( DISTINCTCOUNT ( fact_gl[je_id] ), fact_gl[self_approved] = TRUE )
+
+Bank Items Unmatched =
+CALCULATE (
+    COUNTROWS ( fact_bank_transaction ),
+    fact_bank_transaction[matched_to_gl] = FALSE
+)
+
+
+// ------------------------------------------------------------ 8. Header KPIs
+// Folder: 08 Cards
+
+KPI Exception Headline =
+VAR Cnt = [Open Exceptions]
+VAR Val = [Open Exception Value]
+RETURN
+    Cnt & " open  |  " & FORMAT ( Val, "$#,0,,.0M" )
+
+KPI Tie-out Headline =
+FORMAT ( [AP Variance Absolute], "$#,0" ) & " unreconciled across entities"
+
+KPI SLA Colour =                                    -- drives conditional format
+SWITCH (
+    TRUE (),
+    [SLA Breach %] > 0.25, "#d03b3b",
+    [SLA Breach %] > 0.10, "#fab219",
+    "#0ca30c"
+)

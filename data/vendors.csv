@@ -1,0 +1,63 @@
+vendor_id,vendor_name,vendor_category,country,currency,payment_terms,bank_account_last4,vendor_status,risk_tier,onboarded_date,tax_id
+V1000,Drayton Systems Inc,IT & Software,United States,USD,NET45,7028,Active,Low,2019-04-05,93-2915346
+V1001,Quarry Hill Advisory LLP,Professional Services,United States,USD,NET30,9772,Active,Low,2024-11-29,34-7650954
+V1002,Coppervale Facilities Services,Facilities,United States,USD,NET15,5290,Active,Medium,2020-01-22,62-9160230
+V1003,Lochmere Media Group,Marketing Agency,United States,USD,NET45,1988,Active,Low,2019-12-03,72-1557419
+V1004,Yarrow Corporate Travel,Travel,United States,USD,NET15,2451,Active,Low,2024-09-20,39-1254661
+V1005,Pinnacle Supply Chain Ltd,Logistics,United States,USD,NET15,9686,Active,Low,2023-09-07,80-6565354
+V1006,Zenith Field Services,Subcontractor,United States,USD,NET30,4893,Active,Low,2025-07-14,88-9889812
+V1007,Dunmore Systems Inc,IT & Software,Germany,EUR,NET30,7948,Active,Low,2020-08-22,95-3018770
+V1008,Inverness Consulting Group,Professional Services,United States,USD,NET15,8923,Active,Low,2023-06-13,77-8567323
+V1009,Ashgrove Utilities Co,Facilities,United States,USD,NET15,7675,Active,Medium,2023-10-29,17-9493316
+V1010,Meridian Brand Studio,Marketing Agency,United States,USD,NET30,3594,Active,Medium,2019-09-06,71-1926411
+V1011,Hollis Corporate Travel,Travel,Singapore,SGD,NET30,9506,Active,Medium,2020-04-15,27-3295946
+V1012,Waterford Freight Lines,Logistics,United Kingdom,GBP,NET45,7510,Active,High,2025-12-06,44-3449693
+V1013,Sandalwood Contracting LLC,Subcontractor,United States,USD,NET60,9251,Active,Low,2021-09-20,53-1010960
+V1014,Oakhurst Digital Inc,IT & Software,United States,USD,NET15,6110,Active,High,2021-03-12,42-3160279
+V1015,Tidewater Partners LLP,Professional Services,United Kingdom,GBP,NET30,4494,Active,Medium,2022-08-03,24-2728403
+V1016,Larkfield Utilities Co,Facilities,Canada,CAD,NET30,1338,Active,Low,2024-10-19,87-8781384
+V1017,Yardley Media Group,Marketing Agency,United Kingdom,GBP,NET45,2839,Active,Medium,2025-05-03,36-3830791
+V1018,Stonebridge Travel Management,Travel,United States,USD,NET15,2819,Active,Low,2021-07-25,61-8004397
+V1019,Kestrel Supply Chain Ltd,Logistics,United States,USD,NET60,1922,Active,Low,2023-01-03,94-6197826
+V1020,Westbrook Field Services,Subcontractor,United States,USD,NET45,7556,Active,Low,2024-06-19,75-4435622
+V1021,Norwood Systems Inc,IT & Software,Germany,EUR,NET30,3795,Active,Low,2021-05-21,73-9125496
+V1022,Rosemont Consulting Group,Professional Services,United Kingdom,GBP,NET15,8272,Active,Low,2025-10-21,86-2010247
+V1023,Orion Utilities Co,Facilities,United States,USD,NET30,5313,Active,Low,2025-07-04,92-2658181
+V1024,Saltgrass Brand Studio,Marketing Agency,Germany,EUR,NET30,5759,Active,Low,2022-08-23,77-5789577
+V1025,Blue Ridge Corporate Travel,Travel,United States,USD,NET15,3788,Active,High,2024-06-02,48-2109394
+V1026,Thornhill Supply Chain Ltd,Logistics,United Kingdom,GBP,NET15,3849,Active,Low,2020-04-01,86-2061505
+V1027,Juniper Contracting LLC,Subcontractor,United States,USD,NET15,6051,Active,Medium,2019-10-28,20-3816714
+V1028,Elmwood Digital Inc,IT & Software,United States,USD,NET15,3248,Active,Low,2024-04-18,11-1840194
+V1029,Harborview Advisory LLP,Professional Services,United States,USD,NET30,9182,Active,Low,2022-09-12,99-2269258
+V1030,Foxglove Property Group,Facilities,United States,USD,NET60,1810,Active,Medium,2024-02-29,78-3324774
+V1031,Eastvale Media Group,Marketing Agency,United Kingdom,GBP,NET30,9397,Active,Medium,2021-09-25,25-6352985
+V1032,Cedarline Corporate Travel,Travel,United States,USD,NET30,7275,Active,Medium,2019-09-14,96-2475214
+V1033,Riverbend Logistics Inc,Logistics,United Kingdom,GBP,NET30,5121,Active,High,2020-12-21,75-9944896
+V1034,Parkhurst Contracting LLC,Subcontractor,India,INR,NET45,7185,Active,Low,2023-12-08,64-4749663
+V1035,Clearwater Software Ltd,IT & Software,United States,USD,NET45,4864,Active,Low,2023-10-11,73-2792767
+V1036,Palisade Partners LLP,Professional Services,United States,USD,NET45,2151,Active,Low,2022-10-28,50-5936469
+V1037,Maplecrest Utilities Co,Facilities,United States,USD,NET30,1561,Active,Low,2025-05-25,43-7342777
+V1038,Tolliver Brand Studio,Marketing Agency,India,INR,NET30,4160,Active,Low,2020-11-26,85-7610166
+V1039,Ironwood Mobility Services,Travel,United States,USD,NET60,5687,Active,Medium,2022-07-15,63-7971787
+V1040,Redstone Supply Chain Ltd,Logistics,United Kingdom,GBP,NET30,5429,Active,Low,2023-12-24,75-8434171
+V1041,Northgate Field Services,Subcontractor,United States,USD,NET45,8445,Active,Medium,2021-07-13,56-2644833
+V1042,Umbra Software Ltd,IT & Software,United States,USD,NET30,3902,Active,Low,2020-06-07,77-3734730
+V1043,Overton Partners LLP,Professional Services,United States,USD,NET45,6244,Active,Medium,2025-07-12,96-8095234
+V1044,Underhill Utilities Co,Facilities,United States,USD,NET45,3141,Active,Low,2023-07-25,19-2021916
+V1045,Zephyr Brand Studio,Marketing Agency,United States,USD,NET30,1816,Active,Medium,2022-01-04,84-6116111
+V1046,Granite Bay Corporate Travel,Travel,United States,USD,NET30,5682,Active,Low,2022-03-16,51-4258632
+V1047,Vantage Logistics Inc,Logistics,United States,USD,NET30,7622,Active,Low,2025-04-23,63-4600854
+V1048,Monterey Field Services,Subcontractor,United Kingdom,GBP,NET15,2560,Active,Low,2022-04-27,44-6025987
+V1049,Fairmount Software Ltd,IT & Software,United States,USD,NET30,5006,Active,Low,2025-08-02,17-3701274
+V1050,Vireo Partners LLP,Professional Services,United States,USD,NET60,9259,Active,Low,2023-09-27,24-3694693
+V1051,Apex Utilities Co,Facilities,Netherlands,EUR,NET45,5858,Active,High,2021-04-28,71-6009949
+V1052,Kingsley Creative Agency,Marketing Agency,Canada,CAD,NET15,7317,Active,Medium,2019-07-01,52-2607024
+V1053,Vermillion Travel Management,Travel,United States,USD,NET45,7343,Active,Low,2021-09-12,38-2299743
+V1054,Brightpath Supply Chain Ltd,Logistics,Netherlands,EUR,NET45,9094,Active,Medium,2020-04-25,37-8485270
+V1055,Whitlock Field Services,Subcontractor,United States,USD,NET30,8756,Active,Low,2025-11-09,25-9675895
+V1056,Belmont Systems Inc,IT & Software,United States,USD,NET30,9256,Active,Medium,2021-09-14,84-9220741
+V1057,Glenmoor Partners LLP,Professional Services,India,INR,NET30,7233,Active,Medium,2021-11-28,17-1655314
+V2100,"Norwood Systems, Inc.",IT & Software,Germany,EUR,NET30,3795,Active,Low,2026-03-18,73-9125496
+V2101,QUARRY HILL ADVISORY LLP,Professional Services,United States,USD,NET30,9772,Active,Low,2026-06-11,34-7650954
+V2102,Rosemont Consulting Group (DBA),Professional Services,United Kingdom,GBP,NET15,8272,Active,Low,2026-02-01,86-2010247
+V2103,Hollis  Corporate  Travel,Travel,Singapore,SGD,NET30,9506,Active,Medium,2026-05-26,27-3295946

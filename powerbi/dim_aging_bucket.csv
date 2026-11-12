@@ -1,0 +1,7 @@
+aging_bucket,bucket_sort,is_past_due,bucket_band
+Current,1,False,Current
+1-30,2,True,Early
+31-60,3,True,Early
+61-90,4,True,Watch
+91-180,5,True,Aged
+180+,6,True,Aged

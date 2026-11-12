@@ -1,0 +1,4 @@
+entity,subledger_ap_open_usd,gl_ap_control_usd,variance_usd,explained_missing_gl_postings_usd,explained_fx_posting_errors_usd,explained_topside_entries_usd,explained_fx_on_settlement_usd,explained_total_usd,unexplained_residual_usd,within_threshold,as_of_date_key
+CA01,1453405.53,1451045.3,-2360.23,-2302.85,-119.33,0.0,61.96,-2360.22,-0.01,False,20260930
+UK01,1941168.36,1979639.2,38470.84,-148331.29,-4008.09,190807.17,3.02,38470.81,0.03,False,20260930
+US01,1086786.3,1360826.05,274039.75,-143893.4,3447.93,414924.35,-439.12,274039.76,-0.01,False,20260930

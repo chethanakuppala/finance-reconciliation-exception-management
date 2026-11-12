@@ -1,0 +1,38 @@
+{
+  "company": "Northwind Services Group",
+  "seed": 20260930,
+  "period_start": "2026-01-01",
+  "period_end": "2026-09-30",
+  "as_of_date": "2026-09-30",
+  "row_counts": {
+    "vendors.csv": 62,
+    "invoices.csv": 1816,
+    "payments.csv": 1600,
+    "gl_entries.csv": 8779,
+    "bank_transactions.csv": 1597,
+    "fx_rates.csv": 54,
+    "chart_of_accounts.csv": 13,
+    "cost_centers.csv": 6,
+    "entities.csv": 3,
+    "seeded_defects.csv": 125
+  },
+  "gl_total_debits_usd": 84273370.59,
+  "gl_total_credits_usd": 84317601.79,
+  "gl_net_out_of_balance_usd": -44231.2,
+  "invoice_value_usd": 42578320.29,
+  "payment_value_usd": 38669824.03,
+  "seeded_defects_by_control": {
+    "C-01 DUPLICATE_INVOICE": 16,
+    "C-02 DUPLICATE_PAYMENT": 12,
+    "C-03 UNAPPLIED_PAYMENT": 14,
+    "C-05 PAYMENT_AMOUNT_MISMATCH": 20,
+    "C-04 MISSING_GL_POSTING": 13,
+    "C-09 FX_RATE_ERROR": 9,
+    "C-06 GL_CASH_NOT_ON_STATEMENT": 9,
+    "C-06 BANK_ITEM_NOT_IN_GL": 6,
+    "C-07 UNBALANCED_JOURNAL": 7,
+    "C-08 SOD_VIOLATION": 10,
+    "C-10 TOPSIDE_AP_ENTRY": 5,
+    "C-12 DUPLICATE_VENDOR_MASTER": 4
+  }
+}
